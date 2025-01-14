@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-07-10">
+
+<title>American Community Survey (5 Year Estimates) – Community Capitals Documentation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../data-chapters/bea.html" rel="next">
+<link href="../table-of-contents.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../data-chapters/acs.html">Measurements</a></li><li class="breadcrumb-item"><a href="../data-chapters/acs.html">American Community Survey (5 Year Estimates)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Community Capitals Documentation</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capitals Project Description</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../box-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Structure of the Capitals Box Directory</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../table-of-contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Measurements</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/acs.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">American Community Survey (5 Year Estimates)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/bea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bureau of Economic Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/cbp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">County Business Patterns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/county-health-rate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">County Health Rankings</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/environ-justice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Environmental Justice Screening Tool</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/fbi-crime.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Federal Bureau of Investigations Crime Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/fec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Federal Election Commission</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/fema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FEMA National Risk Index</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/homeland-inf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homeland Infrastructure Foundation Level Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/iowa-culture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iowa Culture App</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/dot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iowa Department of Transportation Bridges</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/iowa-dnr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iowa Department of Natural Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/iecdb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iowa Ethics and Campaign Disclosure Board</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/iowa-gov.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Iowa Government Portal (iowa.gov)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/policy-map.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Policy Map</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/open-street.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open Street Maps</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/iowa-state-lib.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">State Library of Iowa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/social-atlas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Social Capital Atlas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/travel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Travel Iowa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/us-census.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">US Census Bureau</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/religion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">US Religion Census</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data-chapters/usda-census.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">US Department of Agriculture Census</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../measurement-changes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement Changes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#brief-description" id="toc-brief-description" class="nav-link active" data-scroll-target="#brief-description">Brief Description</a></li>
+  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
+  <li><a href="#measures" id="toc-measures" class="nav-link" data-scroll-target="#measures">Measures</a>
+  <ul class="collapse">
+  <li><a href="#margins-of-error" id="toc-margins-of-error" class="nav-link" data-scroll-target="#margins-of-error">Margins of Error</a></li>
+  <li><a href="#percent-of-households-with-own-children-that-are-single-parent-households-social" id="toc-percent-of-households-with-own-children-that-are-single-parent-households-social" class="nav-link" data-scroll-target="#percent-of-households-with-own-children-that-are-single-parent-households-social">Percent of households with own children that are single-parent households (Social)</a></li>
+  <li><a href="#percent-of-all-households-with-own-children-that-are-female-single-parent-households-social" id="toc-percent-of-all-households-with-own-children-that-are-female-single-parent-households-social" class="nav-link" data-scroll-target="#percent-of-all-households-with-own-children-that-are-female-single-parent-households-social">Percent of all households with own children that are Female single-parent households (Social)</a></li>
+  <li><a href="#percent-of-all-households-with-own-children-that-are-male-single-parent-households-social" id="toc-percent-of-all-households-with-own-children-that-are-male-single-parent-households-social" class="nav-link" data-scroll-target="#percent-of-all-households-with-own-children-that-are-male-single-parent-households-social">Percent of all households with own children that are Male single-parent households (Social)</a></li>
+  <li><a href="#prop_commute-social" id="toc-prop_commute-social" class="nav-link" data-scroll-target="#prop_commute-social">prop_commute (Social)</a></li>
+  <li><a href="#english-proficiency-social" id="toc-english-proficiency-social" class="nav-link" data-scroll-target="#english-proficiency-social">English Proficiency (Social)</a></li>
+  <li><a href="#employments-in-agriculture-forestry-fishing-hunting-and-mining-natural" id="toc-employments-in-agriculture-forestry-fishing-hunting-and-mining-natural" class="nav-link" data-scroll-target="#employments-in-agriculture-forestry-fishing-hunting-and-mining-natural">Employments in agriculture, forestry, fishing, hunting, and mining (Natural)</a></li>
+  <li><a href="#median-household-property-value-built" id="toc-median-household-property-value-built" class="nav-link" data-scroll-target="#median-household-property-value-built">Median household property value (Built)</a></li>
+  <li><a href="#median-year-of-built-structures-built" id="toc-median-year-of-built-structures-built" class="nav-link" data-scroll-target="#median-year-of-built-structures-built">Median year of built structures (Built)</a></li>
+  <li><a href="#percentage-of-housing-units-built-before-1960-built" id="toc-percentage-of-housing-units-built-before-1960-built" class="nav-link" data-scroll-target="#percentage-of-housing-units-built-before-1960-built">Percentage of housing units built before 1960 (Built)</a></li>
+  <li><a href="#percentage-of-units-that-are-occupied-built" id="toc-percentage-of-units-that-are-occupied-built" class="nav-link" data-scroll-target="#percentage-of-units-that-are-occupied-built">Percentage of units that are occupied (Built)</a></li>
+  <li><a href="#percentage-of-households-with-complete-plumbing-built" id="toc-percentage-of-households-with-complete-plumbing-built" class="nav-link" data-scroll-target="#percentage-of-households-with-complete-plumbing-built">Percentage of households with complete plumbing (Built)</a></li>
+  <li><a href="#percentage-of-households-with-a-broadband-subscription-built" id="toc-percentage-of-households-with-a-broadband-subscription-built" class="nav-link" data-scroll-target="#percentage-of-households-with-a-broadband-subscription-built">Percentage of households with a broadband subscription (Built)</a></li>
+  <li><a href="#race-diversity-cultural" id="toc-race-diversity-cultural" class="nav-link" data-scroll-target="#race-diversity-cultural">Race Diversity (Cultural)</a></li>
+  <li><a href="#health-insurance-rate-human" id="toc-health-insurance-rate-human" class="nav-link" data-scroll-target="#health-insurance-rate-human">Health Insurance Rate (Human)</a></li>
+  <li><a href="#bachelors-degree-attainment-human" id="toc-bachelors-degree-attainment-human" class="nav-link" data-scroll-target="#bachelors-degree-attainment-human">Bachelor’s Degree Attainment (Human)</a></li>
+  <li><a href="#high-school-degree-attainment-human" id="toc-high-school-degree-attainment-human" class="nav-link" data-scroll-target="#high-school-degree-attainment-human">High School Degree Attainment (Human)</a></li>
+  <li><a href="#senior-dependency-ratio-human" id="toc-senior-dependency-ratio-human" class="nav-link" data-scroll-target="#senior-dependency-ratio-human">Senior Dependency Ratio (Human)</a></li>
+  <li><a href="#child-dependency-ratio-human" id="toc-child-dependency-ratio-human" class="nav-link" data-scroll-target="#child-dependency-ratio-human">Child Dependency Ratio (Human)</a></li>
+  <li><a href="#dependency-ratio-human" id="toc-dependency-ratio-human" class="nav-link" data-scroll-target="#dependency-ratio-human">Dependency Ratio (Human)</a></li>
+  <li><a href="#poverty-rate-financial" id="toc-poverty-rate-financial" class="nav-link" data-scroll-target="#poverty-rate-financial">Poverty Rate (Financial)</a></li>
+  <li><a href="#labor-force-participation-rate-16-and-20-64-financial" id="toc-labor-force-participation-rate-16-and-20-64-financial" class="nav-link" data-scroll-target="#labor-force-participation-rate-16-and-20-64-financial">Labor Force Participation Rate (16+ and 20-64) (Financial)</a></li>
+  <li><a href="#unemployment-rate-financial" id="toc-unemployment-rate-financial" class="nav-link" data-scroll-target="#unemployment-rate-financial">Unemployment Rate (Financial)</a></li>
+  <li><a href="#median-household-income-financial" id="toc-median-household-income-financial" class="nav-link" data-scroll-target="#median-household-income-financial">Median Household Income (Financial)</a></li>
+  <li><a href="#gini-index-of-income-inequality-financial" id="toc-gini-index-of-income-inequality-financial" class="nav-link" data-scroll-target="#gini-index-of-income-inequality-financial">Gini Index of Income Inequality (Financial)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../data-chapters/acs.html">Measurements</a></li><li class="breadcrumb-item"><a href="../data-chapters/acs.html">American Community Survey (5 Year Estimates)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">American Community Survey (5 Year Estimates)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 10, 2024</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">January 6, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="brief-description" class="level2">
+<h2 class="anchored" data-anchor-id="brief-description">Brief Description</h2>
+<p>The American Community Survey (ACS) provides detailed demographic, social, economic, and housing data based on 5-year estimates. This dataset includes various measures related to community capitals, such as housing, employment, commuting, and broadband subscription.</p>
+</section>
+<section id="source" class="level2">
+<h2 class="anchored" data-anchor-id="source">Source</h2>
+<p>The primary source for the measures below is the ACS 5-year report, 2022.</p>
+</section>
+<section id="measures" class="level2">
+<h2 class="anchored" data-anchor-id="measures">Measures</h2>
+<section id="margins-of-error" class="level3">
+<h3 class="anchored" data-anchor-id="margins-of-error">Margins of Error</h3>
+<p>Most of the ACS measures and datasets have the high_moe columns which is True if the margin of error is greater than half of the measure.</p>
+</section>
+<section id="percent-of-households-with-own-children-that-are-single-parent-households-social" class="level3">
+<h3 class="anchored" data-anchor-id="percent-of-households-with-own-children-that-are-single-parent-households-social">Percent of households with own children that are single-parent households (Social)</h3>
+<section id="source-1" class="level4">
+<h4 class="anchored" data-anchor-id="source-1">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1101_C03_005
+<ul>
+<li>Male householder, no spouse present, family household. Households with own children of the householder under 18 years.</li>
+</ul></li>
+<li>S1101_C04_005
+<ul>
+<li>Female householder, no spouse present, family household. Households with own children of the householder under 18 years.</li>
+</ul></li>
+<li>S1101_C01_005
+<ul>
+<li>Total householders. Households with own children of the householder under 18 years.</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation">Measure Description &amp; Calculation</h4>
+<p>The proportion of single-parent households is calculated by summing the number of male and female single-parent households and dividing by the total number of households.</p>
+<p><span class="math display">\[\text{prop\_single} = \frac{\text{Male + Female}}{\text{Total Household}}\]</span></p>
+</section>
+</section>
+<section id="percent-of-all-households-with-own-children-that-are-female-single-parent-households-social" class="level3">
+<h3 class="anchored" data-anchor-id="percent-of-all-households-with-own-children-that-are-female-single-parent-households-social">Percent of all households with own children that are Female single-parent households (Social)</h3>
+<section id="source-2" class="level4">
+<h4 class="anchored" data-anchor-id="source-2">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1101_C04_005
+<ul>
+<li>Female householder, no spouse present, family household. Households with own children of the householder under 18 years.</li>
+</ul></li>
+<li>S1101_C01_005
+<ul>
+<li>Total householders. Households with own children of the householder under 18 years.</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-1" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-1">Measure Description &amp; Calculation</h4>
+<p>The proportion of female single-parent households is calculated by summing the number of female single-parent households and dividing by the total number of households.</p>
+<p><span class="math display">\[\text{prop\_female\_single\_parent} = \frac{\text{Female}}{\text{Total Household}}\]</span></p>
+</section>
+</section>
+<section id="percent-of-all-households-with-own-children-that-are-male-single-parent-households-social" class="level3">
+<h3 class="anchored" data-anchor-id="percent-of-all-households-with-own-children-that-are-male-single-parent-households-social">Percent of all households with own children that are Male single-parent households (Social)</h3>
+<section id="source-3" class="level4">
+<h4 class="anchored" data-anchor-id="source-3">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1101_C03_005
+<ul>
+<li>Male householder, no spouse present, family household. Households with own children of the householder under 18 years.</li>
+</ul></li>
+<li>S1101_C01_005
+<ul>
+<li>Total householders. Households with own children of the householder under 18 years.</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-2" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-2">Measure Description &amp; Calculation</h4>
+<p>The proportion of male single-parent households is calculated by summing the number of male single-parent households and dividing by the total number of households.</p>
+<p><span class="math display">\[\text{prop\_male\_single\_parent} = \frac{\text{Male}}{\text{Total Household}}\]</span></p>
+</section>
+</section>
+<section id="prop_commute-social" class="level3">
+<h3 class="anchored" data-anchor-id="prop_commute-social">prop_commute (Social)</h3>
+<section id="source-4" class="level4">
+<h4 class="anchored" data-anchor-id="source-4">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>B08134_010 (# long-distance Commuters)</li>
+<li>B08134_001 (total commuters)</li>
+</ul>
+</section>
+<section id="measure-description-calculation-3" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-3">Measure Description &amp; Calculation</h4>
+<p>prop_commute is the percent of workers 16+ (who don’t work from home) with more than an hour commute. It is calculated by taking the proportion of long-distance commuters who are 16+ dividing the number of commuters who commute more than one hour by the total number of commuters.</p>
+<p><span class="math display">\[\text{percent\_long\_commute} = \frac{\text{Long-distance commuters}}{\text{Total Commuters}}\]</span></p>
+</section>
+</section>
+<section id="english-proficiency-social" class="level3">
+<h3 class="anchored" data-anchor-id="english-proficiency-social">English Proficiency (Social)</h3>
+<section id="source-5" class="level4">
+<h4 class="anchored" data-anchor-id="source-5">Source</h4>
+<p>ACS Variables for residents who speak very good English:</p>
+<ul>
+<li>B06007_001
+<ul>
+<li>Residents who are proficient in speaking English</li>
+</ul></li>
+<li>B06007_002
+<ul>
+<li>Residents that only speak English</li>
+</ul></li>
+<li>B06007_004
+<ul>
+<li>Residents that speak Spanish at home and speak English “very well”</li>
+</ul></li>
+<li>B06007_007 (Residents that speak other languages at home and speak English “very well”)</li>
+</ul>
+</section>
+<section id="measure-description-calculation-4" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-4">Measure Description &amp; Calculation</h4>
+<p>The proportion of proficient English speakers is calculated by summing the number of all groups of English speakers and dividing by the total number of residents.</p>
+<p><span class="math display">\[\text{percent\_english\_proficiency} = \frac{\text{Sum Proficient}}{\text{Total Residents}}\]</span></p>
+</section>
+</section>
+<section id="employments-in-agriculture-forestry-fishing-hunting-and-mining-natural" class="level3">
+<h3 class="anchored" data-anchor-id="employments-in-agriculture-forestry-fishing-hunting-and-mining-natural">Employments in agriculture, forestry, fishing, hunting, and mining (Natural)</h3>
+<section id="source-6" class="level4">
+<h4 class="anchored" data-anchor-id="source-6">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>C24070_001
+<ul>
+<li>Total civilian employed population 16 years or older.</li>
+</ul></li>
+<li>C24070_002
+<ul>
+<li>Total civilian employed population 16 years or older in agriculture, forestry, fishing and hunting, and mining.</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-5" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-5">Measure Description &amp; Calculation</h4>
+<p>The proportion of employed population in these industries is calculated by the total agriculture, forestry, fishing hunting, and mining employments dividing by the total civilian employed population.</p>
+<p><span class="math display">\[\text{prop\_employed} = \frac{\text{Agriculture, forestry, fishing and hunting, and mining Employments}}{\text{Total Employments}}\]</span></p>
+</section>
+</section>
+<section id="median-household-property-value-built" class="level3">
+<h3 class="anchored" data-anchor-id="median-household-property-value-built">Median household property value (Built)</h3>
+<section id="source-7" class="level4">
+<h4 class="anchored" data-anchor-id="source-7">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>DP04_0089
+<ul>
+<li>Mortgage status for owner-occupied units</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-6" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-6">Measure Description &amp; Calculation</h4>
+<p>Median Household Value of Owner Occupied Units. The median household property value is directly taken from the ACS 5-year report, variable B25077_001.</p>
+</section>
+</section>
+<section id="median-year-of-built-structures-built" class="level3">
+<h3 class="anchored" data-anchor-id="median-year-of-built-structures-built">Median year of built structures (Built)</h3>
+<section id="source-8" class="level4">
+<h4 class="anchored" data-anchor-id="source-8">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>B25035_001 (Median year of built structures)</li>
+</ul>
+</section>
+<section id="measure-description-calculation-7" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-7">Measure Description &amp; Calculation</h4>
+<p>The median year of built structures is directly taken from the ACS 5-year report, variable B25035_001.</p>
+</section>
+</section>
+<section id="percentage-of-housing-units-built-before-1960-built" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-housing-units-built-before-1960-built">Percentage of housing units built before 1960 (Built)</h3>
+<section id="source-9" class="level4">
+<h4 class="anchored" data-anchor-id="source-9">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>B25034_010 (Housing units built 1940 to 1949)</li>
+<li>B25034_009 (Housing units built 1950 to 1959)</li>
+<li>B25034_011 (Housing units built before 1940)</li>
+<li>B25034_001 (Total housing units)</li>
+</ul>
+</section>
+<section id="measure-description-calculation-8" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-8">Measure Description &amp; Calculation</h4>
+<p>The proportion of housing units built before 1960 is calculated by summing the housing units built up to 1959 and dividing by the total number of housing units.</p>
+</section>
+</section>
+<section id="percentage-of-units-that-are-occupied-built" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-units-that-are-occupied-built">Percentage of units that are occupied (Built)</h3>
+<section id="source-10" class="level4">
+<h4 class="anchored" data-anchor-id="source-10">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>DP04_0002P
+<ul>
+<li>Percent of Occupied housing units</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-9" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-9">Measure Description &amp; Calculation</h4>
+<p>The proportion of occupied housing units is calculated by the percent of occupied units.</p>
+</section>
+</section>
+<section id="percentage-of-households-with-complete-plumbing-built" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-households-with-complete-plumbing-built">Percentage of households with complete plumbing (Built)</h3>
+<section id="source-11" class="level4">
+<h4 class="anchored" data-anchor-id="source-11">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>B25047_002 (# Facilities with complete plumbing)</li>
+<li>B25047_001 (Total plumbing facilities)</li>
+</ul>
+</section>
+<section id="measure-description-calculation-10" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-10">Measure Description &amp; Calculation</h4>
+<p>The proportion of households with complete plumbing is calculated by dividing the number of facilities with complete plumbing by the total number of plumbing facilities.</p>
+<p><span class="math display">\[\text{prop\_plumbing} = \frac{\text{Complete Plumbing}}{\text{Total Plumbing}}\]</span></p>
+</section>
+</section>
+<section id="percentage-of-households-with-a-broadband-subscription-built" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-households-with-a-broadband-subscription-built">Percentage of households with a broadband subscription (Built)</h3>
+<section id="source-12" class="level4">
+<h4 class="anchored" data-anchor-id="source-12">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>DP02_0154P
+<ul>
+<li>Percent of total households with a broadband internet subscription</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-11" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-11">Measure Description &amp; Calculation</h4>
+<p>The percent of households with a broadband subscription is calculated by DP02_0154P.</p>
+</section>
+</section>
+<section id="race-diversity-cultural" class="level3">
+<h3 class="anchored" data-anchor-id="race-diversity-cultural">Race Diversity (Cultural)</h3>
+<section id="source-13" class="level4">
+<h4 class="anchored" data-anchor-id="source-13">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>B03002_003 (Not Hispanic or Latino:!!White alone)</li>
+<li>B03002_004 (Not Hispanic or Latino:!!Black or African American alone)</li>
+<li>B03002_005 (Not Hispanic or Latino:!!American Indian and Alaska Native alone)</li>
+<li>B03002_006 (Not Hispanic or Latino:!!Asian alone)</li>
+<li>B03002_007 (Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone)</li>
+<li>B03002_008 (Not Hispanic or Latino:!!Some other race alone)</li>
+<li>B03002_009 (Not Hispanic or Latino:!!Two or more races)</li>
+<li>B03002_013 (Hispanic or Latino:!!White alone)</li>
+<li>B03002_014 (Hispanic or Latino:!!Black or African American alone)</li>
+<li>B03002_015 (Hispanic or Latino:!!American Indian and Alaska Native alone)</li>
+<li>B03002_016 (Hispanic or Latino:!!Asian alone)</li>
+<li>B03002_017 (Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone)</li>
+<li>B03002_018 (Hispanic or Latino:!!Some other race alone)</li>
+<li>B03002_019 (Hispanic or Latino:!!Two or more races)</li>
+</ul>
+</section>
+<section id="measure-description-calculation-12" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-12">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Diversity in the distribution of different race across Iowa communities.</li>
+</ul>
+</section>
+<section id="simpson-index" class="level4">
+<h4 class="anchored" data-anchor-id="simpson-index">Simpson Index</h4>
+<p><span class="math display">\[D = 1 - \left( \frac{\sum n(n-1)}{N(N-1)} \right)\]</span></p>
+<p>Where:</p>
+<p>• n = the total number of organisms of a particular species</p>
+<p>• N = the total number of organisms of all species</p>
+<p>Interpretation: Simpson’s Diversity Index is a measure of diversity which takes into account the number of species present, as well as the relative abundance of each species. As species richness and evenness increase, so diversity increases. It is also the probability of picking two random individuals which are not of the same group.</p>
+</section>
+<section id="race-diversity" class="level4">
+<h4 class="anchored" data-anchor-id="race-diversity">Race Diversity</h4>
+<p>With different groups of race taken from ACS, we calculate the Simpson Index to measure the diversity, using the above formula.</p>
+</section>
+</section>
+<section id="health-insurance-rate-human" class="level3">
+<h3 class="anchored" data-anchor-id="health-insurance-rate-human">Health Insurance Rate (Human)</h3>
+<section id="source-14" class="level4">
+<h4 class="anchored" data-anchor-id="source-14">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S2701_C03_001
+<ul>
+<li>Percent of civilian non-institutionalized population with health insurance</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-13" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-13">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from S2701_C03_001</li>
+</ul>
+</section>
+</section>
+<section id="bachelors-degree-attainment-human" class="level3">
+<h3 class="anchored" data-anchor-id="bachelors-degree-attainment-human">Bachelor’s Degree Attainment (Human)</h3>
+<section id="source-15" class="level4">
+<h4 class="anchored" data-anchor-id="source-15">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1501_C02_015
+<ul>
+<li>Percent of 25+ population with at least a bachelor’s degree</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-14" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-14">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from S1501_C02_015</li>
+</ul>
+</section>
+</section>
+<section id="high-school-degree-attainment-human" class="level3">
+<h3 class="anchored" data-anchor-id="high-school-degree-attainment-human">High School Degree Attainment (Human)</h3>
+<section id="source-16" class="level4">
+<h4 class="anchored" data-anchor-id="source-16">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1501_C02_014
+<ul>
+<li>Percent of 25+ population with at least a high school degree (or equivalent)</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-15" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-15">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from S1501_C02_014</li>
+</ul>
+</section>
+</section>
+<section id="senior-dependency-ratio-human" class="level3">
+<h3 class="anchored" data-anchor-id="senior-dependency-ratio-human">Senior Dependency Ratio (Human)</h3>
+<section id="source-17" class="level4">
+<h4 class="anchored" data-anchor-id="source-17">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S0101_C02_030
+<ul>
+<li>Percent of population that is 65 years of age and over</li>
+</ul></li>
+<li>S0101_C02_022
+<ul>
+<li>Percent of population that is under 18 years of age</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-16" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-16">Measure Description &amp; Calculation</h4>
+<p><span class="math display">\[\text{pct\_18\_64 = 100 - (pct\_under\_18\ +\ pct\_65\_plus)}\]</span> <span class="math display">\[\text{dep\_ratio\_senior} = \frac{\text{pct\_65\_plus}}{\text{pct\_18\_64}}\]</span></p>
+</section>
+</section>
+<section id="child-dependency-ratio-human" class="level3">
+<h3 class="anchored" data-anchor-id="child-dependency-ratio-human">Child Dependency Ratio (Human)</h3>
+<section id="source-18" class="level4">
+<h4 class="anchored" data-anchor-id="source-18">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S0101_C02_030
+<ul>
+<li>Percent of population that is 65 years of age and over</li>
+</ul></li>
+<li>S0101_C02_022
+<ul>
+<li>Percent of population that is under 18 years of age</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-17" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-17">Measure Description &amp; Calculation</h4>
+<p><span class="math display">\[\text{pct\_18\_64 = 100 - (pct\_under\_18\ +\ pct\_65\_plus)}\]</span> <span class="math display">\[\text{dep\_ratio\_child} = \frac{\text{pct\_under\_18}}{\text{pct\_18\_64}}\]</span></p>
+</section>
+</section>
+<section id="dependency-ratio-human" class="level3">
+<h3 class="anchored" data-anchor-id="dependency-ratio-human">Dependency Ratio (Human)</h3>
+<section id="source-19" class="level4">
+<h4 class="anchored" data-anchor-id="source-19">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S0101_C02_030
+<ul>
+<li>Percent of population that is 65 years of age and over</li>
+</ul></li>
+<li>S0101_C02_022
+<ul>
+<li>Percent of population that is under 18 years of age</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-18" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-18">Measure Description &amp; Calculation</h4>
+<p><span class="math display">\[\text{dep\_ratio} = \text{Senior Dependency Ratio + Child Dependency Ratio}\]</span></p>
+</section>
+</section>
+<section id="poverty-rate-financial" class="level3">
+<h3 class="anchored" data-anchor-id="poverty-rate-financial">Poverty Rate (Financial)</h3>
+<section id="source-20" class="level4">
+<h4 class="anchored" data-anchor-id="source-20">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1701_C03_001
+<ul>
+<li>Percent population for whom poverty status is determined with income below the federal poverty line in the last 12 months</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-19" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-19">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from S1701_C03_001</li>
+</ul>
+</section>
+</section>
+<section id="labor-force-participation-rate-16-and-20-64-financial" class="level3">
+<h3 class="anchored" data-anchor-id="labor-force-participation-rate-16-and-20-64-financial">Labor Force Participation Rate (16+ and 20-64) (Financial)</h3>
+<section id="source-21" class="level4">
+<h4 class="anchored" data-anchor-id="source-21">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S2301_C02_001
+<ul>
+<li>Labor force participation rate for population 16 or older</li>
+</ul></li>
+<li>S2301_C02_021
+<ul>
+<li>Labor force participation rate for population aged 20 to 64</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-20" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-20">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measures taken directly from S2301_C02_001 and S2301_C02_021</li>
+</ul>
+</section>
+</section>
+<section id="unemployment-rate-financial" class="level3">
+<h3 class="anchored" data-anchor-id="unemployment-rate-financial">Unemployment Rate (Financial)</h3>
+<section id="source-22" class="level4">
+<h4 class="anchored" data-anchor-id="source-22">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S2301_C04_001
+<ul>
+<li>Unemployment rate for the population 16 or older</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-21" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-21">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from S2301_C04_001</li>
+</ul>
+</section>
+</section>
+<section id="median-household-income-financial" class="level3">
+<h3 class="anchored" data-anchor-id="median-household-income-financial">Median Household Income (Financial)</h3>
+<section id="source-23" class="level4">
+<h4 class="anchored" data-anchor-id="source-23">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>S1903_C03_001
+<ul>
+<li>Median income for all households in the past 12 months (2022 dollars)</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-22" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-22">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from S1903_C03_001</li>
+</ul>
+</section>
+</section>
+<section id="gini-index-of-income-inequality-financial" class="level3">
+<h3 class="anchored" data-anchor-id="gini-index-of-income-inequality-financial">Gini Index of Income Inequality (Financial)</h3>
+<section id="source-24" class="level4">
+<h4 class="anchored" data-anchor-id="source-24">Source</h4>
+<p>ACS Variables:</p>
+<ul>
+<li>B19083_001
+<ul>
+<li>Gini index of income inequality</li>
+</ul></li>
+</ul>
+</section>
+<section id="measure-description-calculation-23" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation-23">Measure Description &amp; Calculation</h4>
+<ul>
+<li>Measure taken directly from B19083_001</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../table-of-contents.html" class="pagination-link" aria-label="Table of Contents">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Table of Contents</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../data-chapters/bea.html" class="pagination-link" aria-label="Bureau of Economic Analysis">
+        <span class="nav-page-text">Bureau of Economic Analysis</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
