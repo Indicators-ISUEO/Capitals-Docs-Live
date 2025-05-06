@@ -191,6 +191,12 @@ window.Quarto = {
  <span class="menu-text">Table of Contents</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../table-of-contents_bh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">table-of-contents</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -358,9 +364,9 @@ window.Quarto = {
   <ul>
   <li><a href="#brief-description" id="toc-brief-description" class="nav-link active" data-scroll-target="#brief-description">Brief Description</a></li>
   <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
-  <li><a href="#cultural_locations_per_10k-cultural" id="toc-cultural_locations_per_10k-cultural" class="nav-link" data-scroll-target="#cultural_locations_per_10k-cultural">Cultural_Locations_per_10k (Cultural)</a>
+  <li><a href="#cultural-locations-per-10000-people-cultural" id="toc-cultural-locations-per-10000-people-cultural" class="nav-link" data-scroll-target="#cultural-locations-per-10000-people-cultural">Cultural Locations per 10,000 People (Cultural)</a>
   <ul class="collapse">
-  <li><a href="#measure-description-calculation" id="toc-measure-description-calculation" class="nav-link" data-scroll-target="#measure-description-calculation">Measure Description &amp; Calculation</a></li>
+  <li><a href="#measure-description" id="toc-measure-description" class="nav-link" data-scroll-target="#measure-description">Measure Description</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -388,7 +394,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">January 6, 2025</p>
+      <p class="date-modified">May 6, 2025</p>
     </div>
   </div>
     
@@ -407,7 +413,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="source">Source</h2>
 <p><a href="https://www.dcaapp.com/">Iowa Culture</a></p>
 <p>A sample code to extract the data from <a href="https://www.dcaapp.com/">Iowa Culture</a> is illustrated below. A complete code is located in the html file <a href="IowaCultureApp-2.html">Code for Web Scraping</a>.</p>
-<div id="4da2d0f8" class="cell" data-execution_count="1">
+<div id="2141d92a" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip install <span class="op">--</span>quiet researchpy bs4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -416,7 +422,7 @@ window.Quarto = {
 <pre><code>Note: you may need to restart the kernel to use updated packages.</code></pre>
 </div>
 </div>
-<div id="b502cee6" class="cell" data-execution_count="2">
+<div id="2fd787ff" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
@@ -430,7 +436,7 @@ window.Quarto = {
 </details>
 </div>
 <p>The <code>extract_info()</code> function below extracts the dataset from the culture app website based on a provided html format. This function is specific to the nature of the html format presented on the culture app website.</p>
-<div id="d559df01" class="cell" data-execution_count="3">
+<div id="662ff49c" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_info(data):</span>
@@ -477,7 +483,7 @@ window.Quarto = {
 </div>
 <p><code>extract_city_county()</code>: is used to extract the the specific city and county from the address since the html format from the website does not explicitly give the either the city or county, but gives them in a single address.</p>
 <p><code>extract_marker()</code>: extracts the marker from the image path in the html file to know the specific category.</p>
-<div id="a65502ce" class="cell" data-execution_count="4">
+<div id="d7b962a5" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to get city and county from the address</span></span>
@@ -501,7 +507,7 @@ window.Quarto = {
 </details>
 </div>
 <p>The functionality of <code>extract_info()</code> is tested in the chunk below</p>
-<div id="45292be7" class="cell" data-execution_count="5">
+<div id="4e9049a0" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>arts <span class="op">=</span> {</span>
@@ -532,7 +538,7 @@ window.Quarto = {
 <span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="a85ff183" class="cell" data-execution_count="6">
+<div id="20e3cf80" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>arts_data <span class="op">=</span> extract_info(arts)</span>
@@ -612,10 +618,13 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="cultural_locations_per_10k-cultural" class="level2">
-<h2 class="anchored" data-anchor-id="cultural_locations_per_10k-cultural">Cultural_Locations_per_10k (Cultural)</h2>
-<section id="measure-description-calculation" class="level3">
-<h3 class="anchored" data-anchor-id="measure-description-calculation">Measure Description &amp; Calculation</h3>
+<section id="cultural-locations-per-10000-people-cultural" class="level2">
+<h2 class="anchored" data-anchor-id="cultural-locations-per-10000-people-cultural">Cultural Locations per 10,000 People (Cultural)</h2>
+<section id="measure-description" class="level3">
+<h3 class="anchored" data-anchor-id="measure-description">Measure Description</h3>
+<p>This indicator measures the number of cultural sites—such as museums, monuments, historic landmarks, and public art—per 10,000 residents in a given city or county. It helps assess the density and accessibility of cultural resources across communities. Cultural participation has been linked to better self-reported health, partly due to its social and emotional benefits (Wilkinson et al., 2007). Attending cultural activities often involves social interaction, which can foster support networks that positively influence health and well-being.</p>
+<section id="calculation" class="level4">
+<h4 class="anchored" data-anchor-id="calculation">Calculation</h4>
 <p>For our analysis, we focused on the total count of historic sites, museums, public art, monuments, and similar locations, collectively referred to as cultural locations. To assess the distribution of these cultural sites within each city or county, we computed the number of cultural locations per 10,000 people. This measure allows us to compare the availability and density of cultural resources across different areas.</p>
 <p>After extracting the relevant data from the website, we tallied the total number of cultural locations for each city or county. To calculate our measure of interest (Cultural_Locations_per_10k), we used the following steps:</p>
 <ul>
@@ -629,6 +638,7 @@ window.Quarto = {
 \]</span></p>
 
 
+</section>
 </section>
 </section>
 

@@ -1,0 +1,952 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Community Capitals Documentation",
+    "section": "",
+    "text": "Capitals Project Description\nThis is a Quarto book used to document the work completed in the DSPG 2024 year for the Community Capitals project.\nProject Sponsor / Collaborator: ISU Community and Economic Development\nDSPG Team Lead: Matthew Voss\nDSPG Graduate Fellow: Solomon Eshun\nDSPG Interns: Lily Christenson, Manjul Balayar, Nhat (Chris) Le",
+    "crumbs": [
+      "Capitals Project Description"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Community Capitals Documentation",
+    "section": "Overview",
+    "text": "Overview\nIn our project, we seek to explore the relationship between community capital indicators and the overall condition of communities in Iowa, aiming to identify strengths, weaknesses, opportunities, and gaps within these communities. The main work focuses on major events such as natural disasters, job losses, new job creation, school closures, and new opportunities for tourism and healthcare. The study seeks to identify the most relevant community capitals, trends over time, and the impact on community resiliency, by analyzing correlations between various indicators and comparing quantitative data with some qualitative insights.\nThat aside, we also seek to develop a comprehensive database of significant events, using sources such as the Worker Adjustment and Retraining Notification Act (WARN), Iowa Economic Development Authority Board minutes, and weather disaster summaries. The Data analysis will include exploring relationships within and between different community capitals, and visualizing findings using dashboards created in Shiny or Tableau. The overall goal is to provide a tool for stakeholders to better understand and enhance community resiliency and quality of life.\n\nProject Description\n\nProject Summary\nWhat do the community capital indicators tell us about a community? Community strengths, weaknesses, opportunities, gaps, etc.\nHow well do the identified indicators tell us about the condition of a community in relationship to the community capitals?\n\n\nProject Scope\n\nDatabase of major events in Iowa communities (natural disasters, plant closings/major job loss, new plant opening/jobs created, school closures/school district mergers, closure of state-run hospitals and nursing care facilities, new opportunities for tourism – music festival, bike trails, recreation, etc., opening of new hospitals/care facilities)\nData analysis:\n\nCorrelations between indicators – including relationship of indicators within and between capitals as well as with different peer groupings (population, RUCC)\nTrends and change over time.\nComparison to qualitative data and use as – visioning, RHRA, small towns poll.\nWhich three capitals are most related (ex: if interested in built capital – which two others might be most relevant to understanding built?)\n\nDashboard – tableau\nResiliency fit into capitals.\n\n\n\nDefinition of Success\nAt the conclusion of the DSPG program the project will deliver: - Database of major events in Iowa communities - R scripts with comments archived on GitHub – automated processes whenever possible - Use data from CED data team database when available. - Documented process descriptions for the follow-up non-DSPG phase - Dashboard to show findings and results from data analysis",
+    "crumbs": [
+      "Capitals Project Description"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html",
+    "href": "table-of-contents.html",
+    "title": "Table of Contents",
+    "section": "",
+    "text": "Built",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#built",
+    "href": "table-of-contents.html#built",
+    "title": "Table of Contents",
+    "section": "",
+    "text": "ACS 5-year\nHomeland infrastructure Foundation Data\nIowa department of Transportation\nPolicyMap\nRWJ County Health Rankings",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#cultural",
+    "href": "table-of-contents.html#cultural",
+    "title": "Table of Contents",
+    "section": "Cultural",
+    "text": "Cultural\n\nACS 5-year\nIowa Culture App\nState Library of Iowa\nTravel Iowa\nU.S. Religion Census",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#financial",
+    "href": "table-of-contents.html#financial",
+    "title": "Table of Contents",
+    "section": "Financial",
+    "text": "Financial\n\nACS 5-year\nBureau of Economic Analysis\nCounty Business Patterns",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#human",
+    "href": "table-of-contents.html#human",
+    "title": "Table of Contents",
+    "section": "Human",
+    "text": "Human\n\nACS 5-year\nRWJ County Health Rankings",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#natural",
+    "href": "table-of-contents.html#natural",
+    "title": "Table of Contents",
+    "section": "Natural",
+    "text": "Natural\n\nACS 5-year\nBureau of Economic Analysis\nEnvironmental Justice Screening Tool\nFEMA National Risk Index\nIowa DNR\nOpenStreetMap\nRWJ County Health Rankings\nUSDA NASS Ag. Census",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#political",
+    "href": "table-of-contents.html#political",
+    "title": "Table of Contents",
+    "section": "Political",
+    "text": "Political\n\nFederal Election Commission\nIowa Ethics and Campaign Disclosure Board",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "table-of-contents.html#social",
+    "href": "table-of-contents.html#social",
+    "title": "Table of Contents",
+    "section": "Social",
+    "text": "Social\n\nACS 5-year\nFBI Crime Reports\nIowa.gov\nPolicyMap\nSocial Capital Atlas\nState Library of Iowa\nUS Census Bureau",
+    "crumbs": [
+      "Table of Contents"
+    ]
+  },
+  {
+    "objectID": "data-chapters/acs.html",
+    "href": "data-chapters/acs.html",
+    "title": "American Community Survey (5 Year Estimates)",
+    "section": "",
+    "text": "Brief Description\nThe American Community Survey (ACS) provides detailed demographic, social, economic, and housing data based on 5-year estimates. This dataset includes various measures related to community capitals, such as housing, employment, commuting, and broadband subscription.",
+    "crumbs": [
+      "Measurements",
+      "American Community Survey (5 Year Estimates)"
+    ]
+  },
+  {
+    "objectID": "data-chapters/acs.html#source",
+    "href": "data-chapters/acs.html#source",
+    "title": "American Community Survey (5 Year Estimates)",
+    "section": "Source",
+    "text": "Source\nThe primary source for the measures below is the ACS 5-year report, 2022.",
+    "crumbs": [
+      "Measurements",
+      "American Community Survey (5 Year Estimates)"
+    ]
+  },
+  {
+    "objectID": "data-chapters/acs.html#measures",
+    "href": "data-chapters/acs.html#measures",
+    "title": "American Community Survey (5 Year Estimates)",
+    "section": "Measures",
+    "text": "Measures\n\nMargins of Error\nMost of the ACS measures and datasets have the high_moe columns which is True if the margin of error is greater than half of the measure.\n\n\nPercent of households with own children that are single-parent households (Social)\n\nMeasure Description\nThis indicator measures the percentage of households headed by a single parent (male or female) with their own children under 18 and no spouse present. It is calculated by dividing the total number of such households by total households. A higher percentage of single-parent households may signal increased vulnerability in a community. These households often face greater financial stress, limited social support, and reduced capacity to respond to and recover from disasters. These challenges can negatively affect social capital and community resilience (Flanagan et al., 2011). #### Source\nACS Variables:\n\nS1101_C03_005\n\nMale householder, no spouse present, family household. Households with own children of the householder under 18 years.\n\nS1101_C04_005\n\nFemale householder, no spouse present, family household. Households with own children of the householder under 18 years.\n\nS1101_C01_005\n\nTotal householders. Households with own children of the householder under 18 years.\n\n\n\n\nCalculation\n\\[\\text{prop\\_single} = \\frac{\\text{Male + Female}}{\\text{Total Household}}\\]\n\n\n\nPercent of all households with own children that are Female single-parent households (Social)\n\nSource\nACS Variables:\n\nS1101_C04_005\n\nFemale householder, no spouse present, family household. Households with own children of the householder under 18 years.\n\nS1101_C01_005\n\nTotal householders. Households with own children of the householder under 18 years.\n\n\n\n\nMeasure Description & Calculation\nThe proportion of female single-parent households is calculated by summing the number of female single-parent households and dividing by the total number of households.\n\\[\\text{prop\\_female\\_single\\_parent} = \\frac{\\text{Female}}{\\text{Total Household}}\\]\n\n\n\nPercent of all households with own children that are Male single-parent households (Social)\n\nSource\nACS Variables:\n\nS1101_C03_005\n\nMale householder, no spouse present, family household. Households with own children of the householder under 18 years.\n\nS1101_C01_005\n\nTotal householders. Households with own children of the householder under 18 years.\n\n\n\n\nMeasure Description & Calculation\nThe proportion of male single-parent households is calculated by summing the number of male single-parent households and dividing by the total number of households.\n\\[\\text{prop\\_male\\_single\\_parent} = \\frac{\\text{Male}}{\\text{Total Household}}\\]\n\n\n\nPercent of Workers with more than an hour commute (Social)\n\nMeasure Description\nThis indicator measures the share of workers aged 16 and older (excluding those who work from home) who commute more than one hour to their place of work. Long commutes are associated with reduced time and energy for civic engagement, local social connections, and participation in community life. Research suggests that extended commute times can negatively impact social capital by limiting individuals’ availability for volunteerism, neighborhood interaction, and community-based activities. These patterns may also affect workforce well-being and local economic vibrancy by decreasing worker satisfaction and retention (Besser et al., 2008).\n\n\nSource\nACS Variables:\n\nB08134_010 (# long-distance Commuters)\nB08134_001 (total commuters)\n\n\n\nCalculation\n\\[\\text{percent\\_long\\_commute} = \\frac{\\text{Long-distance commuters}}{\\text{Total Commuters}}\\]\n\n\n\nEnglish Proficiency (Social)\n\nMeasure Description\nThis indicator measures the proportion of residents who speak English “very well” or better, calculated by dividing the number of proficient English speakers by the total population. English proficiency is an essential component of a community’s ability to access information and services. Limited English proficiency can create barriers to health care, education, employment, and emergency communication. It is also a key component of social vulnerability in disaster contexts. Communities with a higher proportion of residents who speak English less than very well are more likely to experience adverse outcomes during emergencies due to difficulties understanding warnings, evacuation orders, and recovery information. Identifying these communities can support targeted interventions and improve resilience (Flanagan et al., 2011).\n\n\nSource\nACS Variables for residents who speak very good English:\n\nB06007_001\n\nResidents who are proficient in speaking English\n\nB06007_002\n\nResidents that only speak English\n\nB06007_004\n\nResidents that speak Spanish at home and speak English “very well”\n\nB06007_007 (Residents that speak other languages at home and speak English “very well”)\n\n\n\nCalculation\n\\[\\text{percent\\_english\\_proficiency} = \\frac{\\text{Sum Proficient}}{\\text{Total Residents}}\\]\n\n\n\nEmployments in agriculture, forestry, fishing, hunting, and mining (Natural)\n\nMeasure Description\nThis indicator measures the share of the civilian employed population working in agriculture, forestry, fishing, hunting, and mining industries. These industries, while important to rural economies, can be associated with lower levels of economic resilience. Natural resource dependence in rural counties is linked to decreased economic prosperity. Such communities often experience reduced investment in both individual and community human capital, including limited educational and workforce development opportunities. Overreliance on resource-based employment may also constrain long-term financial capital growth due to economic volatility and lower-wage job structures. (Mueller, 2020)\n\n\nSource\nACS Variables:\n\nC24070_001\n\nTotal civilian employed population 16 years or older.\n\nC24070_002\n\nTotal civilian employed population 16 years or older in agriculture, forestry, fishing and hunting, and mining.\n\n\n\n\nCalculation\n\\[\\text{prop\\_employed} = \\frac{\\text{Agriculture, forestry, fishing and hunting, and mining Employments}}{\\text{Total Employments}}\\]\n\n\n\nMedian household property value (Built)\n\nSource\nACS Variables:\n\nDP04_0089\n\nMortgage status for owner-occupied units\n\n\n\n\nMeasure Description & Calculation\nMedian Household Value of Owner Occupied Units. The median household property value is directly taken from the ACS 5-year report, variable B25077_001.\n\n\n\nMedian year of built structures (Built)\n\nSource\nACS Variables:\n\nB25035_001 (Median year of built structures)\n\n\n\nMeasure Description & Calculation\nThe median year of built structures is directly taken from the ACS 5-year report, variable B25035_001.\n\n\n\nPercentage of housing units built before 1960 (Built)\n\nMeasure Description &\nThis indicator measures the share of the population aged 25 and older who have earned a bachelor’s degree or higher. Higher education is a key driver of human and financial capital, contributing to innovation, income growth, and civic engagement. Research shows that skilled workers not only support economic growth but also influence policy decisions and increase demand for amenities and public goods. These dynamics can improve community quality of life, helping attract and retain additional high-skill workers, which in turn reinforces local prosperity (Fan et al., 2016).\n\n\nSource\nACS Variables:\n\nB25034_010 (Housing units built 1940 to 1949)\nB25034_009 (Housing units built 1950 to 1959)\nB25034_011 (Housing units built before 1940)\nB25034_001 (Total housing units)\n\n\n\nCalculation\nThe proportion of housing units built before 1960 is calculated by summing the housing units built up to 1959 and dividing by the total number of housing units.\n\n\n\nPercentage of occupied housing units (Built)\n\nMeasure Description\nThis indicator measures the share of occupied housing units, reflecting the level of property utilization in a community. Vacant and abandoned properties are often signs of disinvestment in the built environment and are associated with physical deterioration, increased crime, and reduced neighborhood vitality. As detailed by Roude et al. (2024), such vacancies can erode social ties, diminish perceived safety, and discourage economic activity. In contrast, higher occupancy supports financial capital through property value retention, fosters social capital via community engagement, and sustains the built environment as a foundation for well-being (Roude et al., 2024).\n\n\nSource\nACS Variables:\n\nDP04_0002P\n\nPercent of Occupied housing units\n\n\n\n\nCalculation\nThe proportion of occupied housing units is calculated by the percent of occupied units.\n\n\n\nPercentage of households with complete plumbing (Built)\n\nSource\nACS Variables:\n\nB25047_002 (# Facilities with complete plumbing)\nB25047_001 (Total plumbing facilities)\n\n\n\nMeasure Description & Calculation\nThe proportion of households with complete plumbing is calculated by dividing the number of facilities with complete plumbing by the total number of plumbing facilities.\n\\[\\text{prop\\_plumbing} = \\frac{\\text{Complete Plumbing}}{\\text{Total Plumbing}}\\]\n\n\n\nPercentage of households with a broadband subscription (Built)\n\nMeasure Description\nThis indicator measures the percentage of households with broadband internet subscriptions. Broadband is a key component of built capital that enables the development of human capital by supporting access to education, employment, and healthcare. According to Stritzel and LoPiccalo (2023), gaps in broadband availability—especially in rural areas—limit communities’ capacity to retain residents, attract employers, and foster income growth. Reliable internet is also essential for virtual learning and telehealth, both of which expand opportunities for individual advancement and community resilience (Valentín-Sívico et al., 2023).\n\n\nSource\nACS Variables:\n\nDP02_0154P\n\nPercent of total households with a broadband internet subscription\n\n\n\n\nCalculation\nThe percent of households with a broadband subscription is calculated by DP02_0154P.\n\n\n\nRace Diversity (Cultural)\n\nSource\nACS Variables:\n\nB03002_003 (Not Hispanic or Latino:!!White alone)\nB03002_004 (Not Hispanic or Latino:!!Black or African American alone)\nB03002_005 (Not Hispanic or Latino:!!American Indian and Alaska Native alone)\nB03002_006 (Not Hispanic or Latino:!!Asian alone)\nB03002_007 (Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone)\nB03002_008 (Not Hispanic or Latino:!!Some other race alone)\nB03002_009 (Not Hispanic or Latino:!!Two or more races)\nB03002_013 (Hispanic or Latino:!!White alone)\nB03002_014 (Hispanic or Latino:!!Black or African American alone)\nB03002_015 (Hispanic or Latino:!!American Indian and Alaska Native alone)\nB03002_016 (Hispanic or Latino:!!Asian alone)\nB03002_017 (Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone)\nB03002_018 (Hispanic or Latino:!!Some other race alone)\nB03002_019 (Hispanic or Latino:!!Two or more races)\n\n\n\nMeasure Description & Calculation\n\nDiversity in the distribution of different race across Iowa communities.\n\n\n\nSimpson Index\n\\[D = 1 - \\left( \\frac{\\sum n(n-1)}{N(N-1)} \\right)\\]\nWhere:\n• n = the total number of organisms of a particular species\n• N = the total number of organisms of all species\nInterpretation: Simpson’s Diversity Index is a measure of diversity which takes into account the number of species present, as well as the relative abundance of each species. As species richness and evenness increase, so diversity increases. It is also the probability of picking two random individuals which are not of the same group.\n\n\nRace Diversity\nWith different groups of race taken from ACS, we calculate the Simpson Index to measure the diversity, using the above formula.\n\n\n\nHealth Insurance Coverage (Human)\n\nMeasure Description\nThis indicator measures the percentage of the population with health insurance. Lack of health insurance is associated with poorer health outcomes and higher mortality rates. Research shows that uninsured individuals often face significant barriers to essential care, particularly in managing chronic diseases. Uninsured patients with conditions like cancer, diabetes, and cardiovascular disease often have more advanced disease at diagnosis, receive lower-quality care, and experience higher mortality rates both during hospitalization and after discharge. Health insurance coverage improves access to preventive services and essential care, leading to better health outcomes (Woolhandler & Himmelstein, 2017).\n\n\nSource\nACS Variables:\n\nS2701_C03_001\n\nPercent of civilian non-institutionalized population with health insurance\n\n\n\n\nCalculation\n\nMeasure taken directly from S2701_C03_001\n\n\n\n\nBachelor’s Degree Attainment (Human)\n\nMeasure Description\nThis indicator measures the share of the population aged 25 and older who have earned a bachelor’s degree or higher. Higher education is a key driver of human and financial capital, contributing to innovation, income growth, and civic engagement. Research shows that skilled workers not only support economic growth but also influence policy decisions and increase demand for amenities and public goods. These dynamics can improve community quality of life, helping attract and retain additional high-skill workers, which in turn reinforces local prosperity (Fan et al., 2016).\n\n\nSource\nACS Variables:\n\nS1501_C02_015\n\nPercent of 25+ population with at least a bachelor’s degree\n\n\n\n\nCalculation\n\nMeasure taken directly from S1501_C02_015\n\n\n\n\nHigh School Degree Attainment (Human)\n\nMeasure Description\nThis indicator measures the percentage of the population aged 25 and older who have completed a high school diploma or equivalent. Educational attainment at this level is a foundational component of human capital and supports workforce participation and local economic stability. Communities with higher education levels tend to experience faster employment growth. A better-educated population is more likely to engage in civic life, support public services, and contribute to a more adaptable and productive labor force (Fan et al., 2016).\n\n\nSource\nACS Variables:\n\nS1501_C02_014\n\nPercent of 25+ population with at least a high school degree (or equivalent)\n\n\n\n\nCalculation\n\nMeasure taken directly from S1501_C02_014\n\n\n\n\nSenior Dependency Ratio (Human)\n\nSource\nACS Variables:\n\nS0101_C02_030\n\nPercent of population that is 65 years of age and over\n\nS0101_C02_022\n\nPercent of population that is under 18 years of age\n\n\n\n\nMeasure Description & Calculation\n\\[\\text{pct\\_18\\_64 = 100 - (pct\\_under\\_18\\ +\\ pct\\_65\\_plus)}\\] \\[\\text{dep\\_ratio\\_senior} = \\frac{\\text{pct\\_65\\_plus}}{\\text{pct\\_18\\_64}}\\]\n\n\n\nChild Dependency Ratio (Human)\n\nSource\nACS Variables:\n\nS0101_C02_030\n\nPercent of population that is 65 years of age and over\n\nS0101_C02_022\n\nPercent of population that is under 18 years of age\n\n\n\n\nMeasure Description & Calculation\n\\[\\text{pct\\_18\\_64 = 100 - (pct\\_under\\_18\\ +\\ pct\\_65\\_plus)}\\] \\[\\text{dep\\_ratio\\_child} = \\frac{\\text{pct\\_under\\_18}}{\\text{pct\\_18\\_64}}\\]\n\n\n\nDependency Ratio (Human)\n\nSource\nACS Variables:\n\nS0101_C02_030\n\nPercent of population that is 65 years of age and over\n\nS0101_C02_022\n\nPercent of population that is under 18 years of age\n\n\n\n\nMeasure Description & Calculation\n\\[\\text{dep\\_ratio} = \\text{Senior Dependency Ratio + Child Dependency Ratio}\\]\n\n\n\nPoverty Rate (Financial)\n\nSource\nACS Variables:\n\nS1701_C03_001\n\nPercent population for whom poverty status is determined with income below the federal poverty line in the last 12 months\n\n\n\n\nMeasure Description & Calculation\n\nMeasure taken directly from S1701_C03_001\n\n\n\n\nLabor Force Participation Rate (Population 16+) (Financial)\n\nMeasure Description\nThis indicator measures the percentage of the population aged 16 and older actively participating in the labor force. Lack of labor force participation in this group is associated with lower well-being and can lead to diminished human and financial capital. Research shows that individuals who are unemployed or out of the labor force report lower life satisfaction and higher negative affect. However, they tend to have a more optimistic outlook about their future. When individuals of this age group are not engaged in the labor force, they may experience reduced economic opportunities, impacting both their financial capital and overall life satisfaction (Graham & Pinto, 2021).\n\n\nSource\nACS Variables:\n\nS2301_C02_001\n\nLabor force participation rate for population 16 or older\n\n\n\n\nCalculation\n\nMeasures taken directly from S2301_C02_001 and S2301_C02_021\n\n\n\n\nLabor Force Participation Rate (Population 20-64) (Financial)\n\nMeasure Description\nThis indicator measures the percentage of individuals aged 20 to 64 who are actively participating in the labor force. For this age group, lack of labor force participation is strongly tied to lower health outcomes and reduced human capital. Research indicates that people within this age range who are unemployed have significantly lower life satisfaction compared to those employed, though they remain optimistic about their future. The financial implications of unemployment for this group are considerable, as it reduces both income opportunities and social mobility, ultimately impacting their long-term economic stability (Graham & Pinto, 2021).\n\n\nSource\nACS Variables:\n\nS2301_C02_021\n\nLabor force participation rate for population aged 20 to 64\n\n\n\n\nCalculation\n\nMeasures taken directly from S2301_C02_001 and S2301_C02_021\n\n\n\n\nUnemployment Rate (Financial)\n\nMeasure Description\nThis indicator measures the percentage of the population aged 16 and older who are unemployed. Unemployment is associated with both poorer psychological health and reduced financial capital. Research shows that unemployed individuals experience significantly more distress and lower well-being than those who are employed. Employment contributes to mental health by providing structure, social contact, purpose, and status; its absence often leads to deteriorated psychological well-being (Paul & Moser, 2009). Financially, unemployment can limit a household’s ability to maintain income and savings, contributing to greater economic vulnerability over time (Gruber, 2000).\n\n\nSource\nACS Variables:\n\nS2301_C04_001\n\nUnemployment rate for the population 16 or older\n\n\n\n\nCalculation\n\nMeasure taken directly from S2301_C04_001\n\n\n\n\nMedian Household Income (Financial)\n\nMeasure Description\nThis indicator measures the median income of households. Median household income is a key component of financial capital and is strongly associated with overall quality of life. Higher income levels provide individuals with better access to resources such as healthcare, education, and social opportunities, which in turn contribute to better physical and psychological well-being. Research has shown that individuals with higher incomes tend to report higher levels of life satisfaction across multiple dimensions, including physical health, mental well-being, and social engagement. According to a study on quality of life and sense of community, people with higher income report enhanced quality of life, including better psychological health and greater social connectedness (Gattino et al., 2013).\n\n\nSource\nACS Variables:\n\nS1903_C03_001\n\nMedian income for all households in the past 12 months (2022 dollars)\n\n\n\n\nCalculation\n\nMeasure taken directly from S1903_C03_001\n\n\n\n\nHouseholds Below Poverty Level (Financial)\n\nMeasure Description\nThis indicator measures the percentage of households with income below the federal poverty level in the past 12 months. Poverty represents a constraint on financial capital, limiting access to essential goods, services, and investments that support economic stability and long-term mobility. Research shows that poverty is causally linked to poorer developmental outcomes in children, particularly in cognitive and educational domains, due to factors such as material hardship, family stress, and limited access to enriching environments (Chaudry & Wimer, 2016). At the household level, poverty reduces the ability to accumulate savings, invest in education or housing, and respond to financial shocks—core dimensions of financial capital (Chetty et al., 2014). The timing, duration, and concentration of poverty—especially in early childhood and across communities—can have lasting impacts on opportunity and economic well-being.\n\n\nSource\nACS Variables:\n\nS1701_C03_001\n\nPopulation for whom poverty status is determined in the past 12 months.\n\n\n\n\nCalculation\n\nMeasure taken directly from S1701_C03_001\n\n\n\n\nGini Index of Income Inequality (Financial)\n\nMeasure Description\nThis indicator measures income inequality within a population using the Gini coefficient, where higher values reflect greater disparity between high- and low-income earners. Income inequality can reduce overall child well-being, regardless of a household’s individual income. Based on (Wilkinson & Pickett, 2007), greater inequality is associated with worse outcomes across multiple child well-being domains—including higher rates of teenage births, infant mortality, low birth weight, juvenile homicide, poor mental health, and school dropout. Societies with larger gaps between rich and poor tend to experience more widespread social and developmental challenges. These findings suggest that income distribution, not just income levels, influences the development of human and financial capital.\n\n\nSource\nACS Variables:\n\nB19083_001\n\nGini index of income inequality\n\n\n\n\nCalculation\n\nMeasure taken directly from B19083_001",
+    "crumbs": [
+      "Measurements",
+      "American Community Survey (5 Year Estimates)"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html",
+    "href": "table-of-contents_bh.html",
+    "title": "1  table-of-contents",
+    "section": "",
+    "text": "2 Table of Contents",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#built",
+    "href": "table-of-contents_bh.html#built",
+    "title": "1  table-of-contents",
+    "section": "2.1 Built",
+    "text": "2.1 Built\n\nMedian household property value\nMedian year of built structures\nPercentage of housing units built before 1960\nPercentage of occupied Housing Units\nPercentage of households with complete plumbing\nPercentage of households with a broadband subscription\nNumber of bridges per acre\nPercent of bridges that are obsolete or structurally deficient\nNumber of cell towers per 10,000 population\nNumber of public schools per 10,000 population\nNumber of private schools per 10,000 population\nNumber of colleges and universities per 10,000 population\nNumber of community colleges per 10,000 population\nNumber of fire stations per 10,000 population\nNumber of police stations per 10,000 population (Law Enforcement)\nNumber of hospitals per 10,000 population\nNumber of child care centers per 10,000 population\nNumber of convention centers per 10,000 population\nNumber of sports venues per 10,000 population\nFood Environment Index\nPower plant energy generation",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#cultural",
+    "href": "table-of-contents_bh.html#cultural",
+    "title": "1  table-of-contents",
+    "section": "2.2 Cultural",
+    "text": "2.2 Cultural\n\nCultural Locations per 10,000 People (Historic sites, public art, museums, monuments)\nRacial Diversity Simpson Index\nReligious Diversity Simpson Index\nLibrary Visits per 10,000 population\nLibrary Book Circulation per 10,000 population\nCommunity Events per 10,000 population",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#financial",
+    "href": "table-of-contents_bh.html#financial",
+    "title": "1  table-of-contents",
+    "section": "2.3 Financial",
+    "text": "2.3 Financial\n\nCounty GDP per Capita (Thousands of $)\nPercent of County GDP in Manufacturing\nPercent of County GDP in Finance & Insurance\nUnemployment rate among 16+ population\nPercent of 16+ Population in Labor Force\nPercent of 20-64 Population in Labor Force\nMedian Household Income\nHouseholds Below Poverty Level\nGini Index of Income Diversity\nPercent of total businesses that are small (&lt;=4 employees)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#human",
+    "href": "table-of-contents_bh.html#human",
+    "title": "1  table-of-contents",
+    "section": "2.4 Human",
+    "text": "2.4 Human\n\nPercent of adults with fair or poor health\nPoor physical health days (average number of physically unhealthy days in last 30)\nPoor mental health days (average number of mentally unhealthy days in last 30)\nHealth insurance rate (civilian noninstitutionalized population)\nPercent of 25+ Population with Bachelor’s Degree\nPercent of 25+ Population with HS Degree\nSenior dependency ratio (ratio of 65+ population to 18-64 population)\nChild dependency ratio (ratio of &lt;18 population to 18-64 population)\nDependency Ratio (ratio of children and seniors to 18-64 population)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#natural",
+    "href": "table-of-contents_bh.html#natural",
+    "title": "1  table-of-contents",
+    "section": "2.5 Natural",
+    "text": "2.5 Natural\n\nPercentage of Cropland\nCropland Value in Dollards per Acre\nPercent of County in Forest Reserve Program\nPercent of County in Public Areas\nCity Parks per 10,000 Population\nTotal Length of Streams in County\nPercent of County in Lakes\nPercent of County in Wetlands\nPresence of Drinking Water Violations\nParticulate Matter (PM2.5) Density\nAir toxics cancer risk\nRespiratory Hazard Index\nToxic releases to air\nWeighted proximity to hazardous waste\nWeighted proximity to wastewater discharge\nPercent of County GDP in Agriculture, Forestry, Fishing, and Hunting\nPercent of County GDP in Mining\nPercent of population employed in agriculture, forestry, fishing and hunting, and mining\nAnnualized frequency of floods\nAnnualized frequency of heat waves\nAnnualized frequency of hail\nAnnualized frequency of strong wind\nAnnualized frequency of tornadoes\nAnnualized frequency of winter weather\nAnnualized frequency of ice storms\nAnnualized frequency of droughts",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#political",
+    "href": "table-of-contents_bh.html#political",
+    "title": "1  table-of-contents",
+    "section": "2.6 Political",
+    "text": "2.6 Political\n\nFederal election contributions\nState election contributions",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "table-of-contents_bh.html#social",
+    "href": "table-of-contents_bh.html#social",
+    "title": "1  table-of-contents",
+    "section": "2.7 Social",
+    "text": "2.7 Social\n\nViolent Crime per 10,000 Population\nTotal crime per 10,000 Population\nEconomic Connectedness\nSupport Ratio (Cohesiveness)\nClustering - Percent of friends that are also friends with each other\nVolunteering Rate\nNumber of Civic Organizations\nPercent of single-parent households with children\nPercent of female-headed single-parent households with children\nPercent of male-headed single-parent households with children\nPercent of Workers with more than an hour commute\nPercent of Residents who are not proficient at English\n2020 Decennial Respondent Rates\nPercent Voter Turnout\nTotal Voters per 10,000 Population\nSchool Violence per 1,000 students",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>table-of-contents</span>"
+    ]
+  },
+  {
+    "objectID": "data-chapters/dot.html",
+    "href": "data-chapters/dot.html",
+    "title": "Iowa Department of Transportation Bridges",
+    "section": "",
+    "text": "Brief Description\nThe Iowa DOT Bridges dataset includes information on total bridges, obsolete bridges, and deficient bridges. It also contains derived measures such as the proportion of obsolete and deficient bridges and the number of bridges per acre per county.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Transportation Bridges"
+    ]
+  },
+  {
+    "objectID": "data-chapters/dot.html#sources",
+    "href": "data-chapters/dot.html#sources",
+    "title": "Iowa Department of Transportation Bridges",
+    "section": "Sources",
+    "text": "Sources\n\nIowa Department of Transportation\nAcres of each county based on the ALAND + AWATER attributes of Census data.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Transportation Bridges"
+    ]
+  },
+  {
+    "objectID": "data-chapters/dot.html#measures",
+    "href": "data-chapters/dot.html#measures",
+    "title": "Iowa Department of Transportation Bridges",
+    "section": "Measures",
+    "text": "Measures\nInitially, there were three separate datasets: total bridges, obsolete bridges, and deficient bridges, each including the respective counts. After merging all these datasets, the new measures were:\n\nProportion_Obsolete_Deficient (Built)\nCalculated by adding total sum of obsolete and deficient bridges divided by total bridges.\n\n\nBridges_Per_Acre (Built)\nCalculated by total bridge count divided by county’s total acre per county.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Transportation Bridges"
+    ]
+  },
+  {
+    "objectID": "data-chapters/dot.html#measure-calculation",
+    "href": "data-chapters/dot.html#measure-calculation",
+    "title": "Iowa Department of Transportation Bridges",
+    "section": "Measure Calculation",
+    "text": "Measure Calculation\n\\[{\\text{Proportion\\_Obsolete\\_Deficient = }}\\frac{\\text{Obsolete Count + Deficient Count}}{\\text{Bridge Count}}\\]\n\\[{\\text{Bridges\\_Per\\_Acre = }}\\frac{\\text{Bridges Count}}{\\text{County area}}\\]",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Transportation Bridges"
+    ]
+  },
+  {
+    "objectID": "data-chapters/open-street.html",
+    "href": "data-chapters/open-street.html",
+    "title": "Open Street Maps",
+    "section": "",
+    "text": "Brief Description\nOpen Street Map is an open data source where people can edit the map of the world. The map contains roads, trails, cafes, railroads, parks, schools, and more.",
+    "crumbs": [
+      "Measurements",
+      "Open Street Maps"
+    ]
+  },
+  {
+    "objectID": "data-chapters/open-street.html#source",
+    "href": "data-chapters/open-street.html#source",
+    "title": "Open Street Maps",
+    "section": "Source",
+    "text": "Source\nOpen Street Map\nU.S. Census Bureau\nCity data from ACS 5-year report, 2022",
+    "crumbs": [
+      "Measurements",
+      "Open Street Maps"
+    ]
+  },
+  {
+    "objectID": "data-chapters/open-street.html#measures",
+    "href": "data-chapters/open-street.html#measures",
+    "title": "Open Street Maps",
+    "section": "Measures",
+    "text": "Measures\n\nPark Area (Natural)\n\nMeasure Description & Calculation\nThe land designated to parks in a city. To get the city area we had to use the sf package in r to find the area of the polygon geometries of the parks.\nFinal_Parks_City_intersection$park_area &lt;- \n    st_area(st_geometry(Final_Parks_City_intersection))\n\n\n\nCity Area (Natural)\n\nMeasure Description & Calculation\nThe land designated to the cities in Iowa. We got the polygon geometry for the cities from the Tiger/line Shapefile, choosing 2023 Iowa Places. We then used the sf package in r to find the area of the polygon geometries of the cities.\nshape$city_area &lt;- st_area(st_geometry(shape))\n\n\n\nPark City Proportion (Natural)\n\nMeasure Description & Calculation\nThe park area as a proportion of the total city area.\n\\[\n\\text{Park City Proportion} = \\frac{\\text{park area}}{\\text{city area}}\n\\]\n\n\n\nNum Parks Per 10K (Natural)\n\nMeasure Description & Calculation\nThe number of parks in a city per 10,000 people.\n\\[\n\\text{Num Parks Per 10K} = \\frac{\\text{number of parks in a city}}{\\text{Population}}\\times 10000\n\\]",
+    "crumbs": [
+      "Measurements",
+      "Open Street Maps"
+    ]
+  },
+  {
+    "objectID": "data-chapters/homeland-inf.html",
+    "href": "data-chapters/homeland-inf.html",
+    "title": "Homeland Infrastructure Foundation Level Data",
+    "section": "",
+    "text": "Brief Description\nThe Homeland Infrastructure Foundation Level Dataset (HIFLD) is a comprehensive collection of geospatial data critical for infrastructure planning and management, focusing on essential public services and facilities. Its datasets, which are integral to the built capital, include measures such as Cellular Towers, Colleges and Universities, Convention Centers, Fire and Emergency Stations, Hospitals, Law Enforcement Locations, Sports Venues, Private and Public Schools, Community Colleges, and Child Care Centers.",
+    "crumbs": [
+      "Measurements",
+      "Homeland Infrastructure Foundation Level Data"
+    ]
+  },
+  {
+    "objectID": "data-chapters/homeland-inf.html#source",
+    "href": "data-chapters/homeland-inf.html#source",
+    "title": "Homeland Infrastructure Foundation Level Data",
+    "section": "Source",
+    "text": "Source\nHIFLD\n\nMeasures\n\nCellular_Towers_per_10k (Built)\nCollege_Universities_per_10k (Built)\nConvention_Centers_per_10k (Built)\nFire_Emergency_Stations_per_10k (Built)\nHospitals_per_10k (Built)\nLocal_Law_Enforcement_Locations_per_10k (Built)\nSports_Venues_per_10k (Built)\nPrivate_Schools_per_10k (Built)\nPublic_Schools_per_10k (Built)\nCommunity_Colleges_per_10k (Built)\n\n\n\nMeasure Description & Calculation\nAll these measurements were obtained from the Homeland Infrastructure Foundation Level Dataset, except for the childcare data, which was sourced from the County Health Rankings Dataset. Initially, all datasets were in geojson format so after extraction we performed a spatial join with the ACS population data at both the city and county levels to obtain the GEOID, population, and accurate county and city names, ensuring each location was correctly correlated.\nFor the per_10k calculations, we used ACS population data, dividing the total number of venues by the population and then multiplying by 10,000:\nper10k = [\n    'Cellular_Towers', 'College_Universities', 'Convention_Centers', 'Fire_Emergency_Stations',\n    'Hospitals', 'Local_Law_Enforcement_Locations', 'Sports_Venues', 'Private_Schools', 'Public_Schools',\n    'Community_Colleges', 'Child_Care_Centers'\n]\n\nfor count in per10k:\n  county[f'{count}_per_10k'] = ((county[count] / county['Population']) * 10000)",
+    "crumbs": [
+      "Measurements",
+      "Homeland Infrastructure Foundation Level Data"
+    ]
+  },
+  {
+    "objectID": "data-chapters/county-health-rate.html",
+    "href": "data-chapters/county-health-rate.html",
+    "title": "County Health Rankings",
+    "section": "",
+    "text": "Brief Description\nCounty Health Rankings data provides insights into the health outcomes and factors influencing health within counties across the United States. It includes measures related to natural and built environments, such as air and water quality, child care, and access to healthy foods.",
+    "crumbs": [
+      "Measurements",
+      "County Health Rankings"
+    ]
+  },
+  {
+    "objectID": "data-chapters/county-health-rate.html#brief-description",
+    "href": "data-chapters/county-health-rate.html#brief-description",
+    "title": "County Health Rankings",
+    "section": "",
+    "text": "Source\n2024 County Health Rankings",
+    "crumbs": [
+      "Measurements",
+      "County Health Rankings"
+    ]
+  },
+  {
+    "objectID": "data-chapters/county-health-rate.html#measures",
+    "href": "data-chapters/county-health-rate.html#measures",
+    "title": "County Health Rankings",
+    "section": "Measures",
+    "text": "Measures\nInitially, each measure in the dataset included its raw value along with the high and low values of its confidence interval. However, we chose to use only the raw values for our final dataset. Additionally, while the child care and food environment index measures were not used in our county health rankings natural dataset, they were incorporated into our built capital analysis.\n\nFair_Health_rawvalue\nParticulate_Matter_rawvalue\nDrinking_Water_Violations_rawvalue\nChild_Care_Centers_rawvalue\nFood_Environment_Index_rawvalue\nPhysical Health\nMental Health\n\n\nParticulate_Matter (Natural)\n\nParticulate matter (PM) encompasses microscopic particles suspended in the air, such as dust, dirt, soot, smoke, and liquid droplets.\n\n\n\nDrinking_Water_Violations (Natural)\n\nWater Pollution\n\n\n\nFood Environment Index (Built)\n\nLimited Access to Healthy Foods estimates the percentage of the population that is low income and does not live close to a grocery store. (according to, County Health Rankings)\n\n\n\nChild Care Centers (Built)\n\nThe number of child care centers per 1,000 population under 5 years old.\n\n\n\nFair and Poor Health (Human)\n\nThis indicator reflects the percentage of adults who report being in fair or poor health. Self-reported health status is a strong predictor of overall well-being and life satisfaction. Poverty contributes to poor health through inadequate living conditions, limited access to medical care, and barriers to treatment (Thorisdottir et al., 2017). In contrast, areas with more developed infrastructure and healthcare access tend to support better health outcomes and improved subjective well-being.\n\n\n\nPoor Physical Health Days (Human)\n\nThe average number of reported physically unhealthy days per month\n\n\n\nPoor Mental Health Days (Human)\n\nThe average number of reported mentally unhealthy days per month",
+    "crumbs": [
+      "Measurements",
+      "County Health Rankings"
+    ]
+  },
+  {
+    "objectID": "data-chapters/policy-map.html",
+    "href": "data-chapters/policy-map.html",
+    "title": "Policy Map",
+    "section": "",
+    "text": "Source\nPolicy Map",
+    "crumbs": [
+      "Measurements",
+      "Policy Map"
+    ]
+  },
+  {
+    "objectID": "data-chapters/policy-map.html#brief-description",
+    "href": "data-chapters/policy-map.html#brief-description",
+    "title": "Policy Map",
+    "section": "Brief Description",
+    "text": "Brief Description\nPolicy Map has a large variety of datasets available. For this project, we utilized two datasets.",
+    "crumbs": [
+      "Measurements",
+      "Policy Map"
+    ]
+  },
+  {
+    "objectID": "data-chapters/policy-map.html#measures",
+    "href": "data-chapters/policy-map.html#measures",
+    "title": "Policy Map",
+    "section": "Measures",
+    "text": "Measures\n\nTotal Power Generation (Built)\nThe data for this measure is provided by the US Department of Energy Energy Information Administration. The data consists of a list of power plant locations across the country, including their energy capacity. Total Power Generation is measured by total MW for power plants in a given county or city.\n\nMeasure Description & Calculation\nThis measure is a sum of the energy capacity in MW of all of the power plants in a county or city.\n\n\n\nSchool Violence per 1,000 Students (Social)\nThe data for this measure is from the US Department of Education Office of Civil Rights. The data has a large number of variables. Included in the data are measures of rates of violent incidents per 1,000 students in each public school. These violent incidents include rapes, sexual assaults, robberies, physical attacks or fights, threats of physical attack, and possession of firearms or explosive devices.\n\nMeasure Description & Calculation\nThis measure is a sum of the rates per 1,000 students for each of the violent incidents listed above.",
+    "crumbs": [
+      "Measurements",
+      "Policy Map"
+    ]
+  },
+  {
+    "objectID": "data-chapters/religion.html",
+    "href": "data-chapters/religion.html",
+    "title": "US Religion Census",
+    "section": "",
+    "text": "Brief Description\nThe US Religion Census provides data about the distribution of different religious traditions.",
+    "crumbs": [
+      "Measurements",
+      "US Religion Census"
+    ]
+  },
+  {
+    "objectID": "data-chapters/religion.html#source",
+    "href": "data-chapters/religion.html#source",
+    "title": "US Religion Census",
+    "section": "Source",
+    "text": "Source\nThe Association of Religion Data Archives",
+    "crumbs": [
+      "Measurements",
+      "US Religion Census"
+    ]
+  },
+  {
+    "objectID": "data-chapters/religion.html#measures",
+    "href": "data-chapters/religion.html#measures",
+    "title": "US Religion Census",
+    "section": "Measures",
+    "text": "Measures\n\nReligious Diversity (Cultural)\n\nMeasure Description & Calculation\nReligious Tradition Diversity (consider non-religious people as a tradition)\n\n\nSimpson Index\n\\[D = 1 - \\left( \\frac{\\sum n(n-1)}{N(N-1)} \\right)\\]\nWhere:\n• n = the total number of organisms of a particular species\n• N = the total number of organisms of all species\nInterpretation: Simpson’s Diversity Index is a measure of diversity which takes into account the number of species present, as well as the relative abundance of each species. As species richness and evenness increase, so diversity increases. It is also the probability of picking two random individuals which are not of the same group.\n\n\nReligious Diversity (Cultural)\nFrom the dataset, we summarize the dataset by the number of adherents across different religious traditions. Calculate the Simpson Index for different traditions (species) using the formula above.",
+    "crumbs": [
+      "Measurements",
+      "US Religion Census"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-culture.html",
+    "href": "data-chapters/iowa-culture.html",
+    "title": "Iowa Culture App",
+    "section": "",
+    "text": "Brief Description\nIowa Culture App provides detailed information on various arts, history and cultural destinations in Iowa.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Culture App"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-culture.html#source",
+    "href": "data-chapters/iowa-culture.html#source",
+    "title": "Iowa Culture App",
+    "section": "Source",
+    "text": "Source\nIowa Culture\nA sample code to extract the data from Iowa Culture is illustrated below. A complete code is located in the html file Code for Web Scraping.\n\n\nShow the code\npip install --quiet researchpy bs4\n\n\nNote: you may need to restart the kernel to use updated packages.\n\n\n\n\nShow the code\nimport json\nimport re\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nimport warnings\nimport researchpy as rp\nimport os\nwarnings.filterwarnings('ignore')\n\n\nThe extract_info() function below extracts the dataset from the culture app website based on a provided html format. This function is specific to the nature of the html format presented on the culture app website.\n\n\nShow the code\ndef extract_info(data):\n    results = []\n    for place in data['p']:\n        info = {}\n        info['title'] = place['title']\n        info['latitude'] = place['lat']\n        info['longitude'] = place['lon']\n        info['image'] = f\"/images/icons/markers/{place['icon']}\"\n\n        # Extracting distance\n        distance_start = place['win'].find('&lt;span class=\"distance\"&gt;') + len('&lt;span class=\"distance\"&gt;')\n        distance_end = place['win'].find('&lt;/span&gt;', distance_start)\n        info['distance'] = place['win'][distance_start:distance_end].strip()\n\n        # Extracting full address\n        address_start = place['win'].find('&lt;strong&gt;Address:&lt;/strong&gt;') + len('&lt;strong&gt;Address:&lt;/strong&gt;')\n        address_end = place['win'].find('&lt;/p&gt;', address_start)\n        info['address'] = place['win'][address_start:address_end].strip().replace('&lt;br /&gt;', ', ')\n\n        # Extracting phone number\n        phone_start = place['win'].find('&lt;i class=\"fa fa-phone fa-fw\"&gt;&lt;/i&gt;')\n        if phone_start != -1:\n            phone_start += len('&lt;i class=\"fa fa-phone fa-fw\"&gt;&lt;/i&gt;')\n            phone_end = place['win'].find('&lt;/p&gt;', phone_start)\n            info['phone'] = place['win'][phone_start:phone_end].strip()\n        else:\n            info['phone'] = None\n\n        # Extracting website\n        website_start = place['win'].find('&lt;i class=\"fa fa-globe fa-fw\"&gt;&lt;/i&gt;&lt;a href=\"')\n        if (website_start != -1):\n            website_start += len('&lt;i class=\"fa fa-globe fa-fw\"&gt;&lt;/i&gt;&lt;a href=\"')\n            website_end = place['win'].find('\"', website_start)\n            info['website'] = place['win'][website_start:website_end].strip()\n        else:\n            info['website'] = None\n\n        results.append(info)\n\n    return results\n\n\nextract_city_county(): is used to extract the the specific city and county from the address since the html format from the website does not explicitly give the either the city or county, but gives them in a single address.\nextract_marker(): extracts the marker from the image path in the html file to know the specific category.\n\n\nShow the code\n# Function to get city and county from the address\ndef extract_city_county(address):\n    parts = address.split(',')\n    city = None\n    county = None\n    for i, part in enumerate(parts):\n        if 'IA' in part:\n            city = parts[i-1].strip()\n        if 'County' in part:\n            county = part.strip().replace(' County', '')\n    return city, county\n\n\n# Function to extract image path as marker\ndef extract_marker(image_path):\n    base_name = os.path.basename(image_path)\n    marker_name = os.path.splitext(base_name)[0]\n    return marker_name\n\n\nThe functionality of extract_info() is tested in the chunk below\n\n\nShow the code\narts = {\n    \"s\": 1,\n    \"p\": [\n        {\n            \"icon\": \"national-register-of-historic-places.png\",\n            \"title\": \"Christian Peterson Courtyard Sculptures and Dairy Industry Building\",\n            \"lat\": \"42.026731\",\n            \"lon\": \"-93.642860\",\n            \"win\": \"&lt;div class=\\\"window-container scroll\\\"&gt;\\n\\t&lt;div class=\\\"image-container\\\"&gt;\\n\\t\\t&lt;img src=\\\"/images/default/history.jpg\\\" class=\\\"scale\\\" /&gt;\\n\\t&lt;/div&gt;\\n\\t&lt;div class=\\\"window-content\\\"&gt;\\n\\t\\t&lt;div class=\\\"window-title\\\"&gt;\\n\\t\\t\\t&lt;div class=\\\"pin\\\"&gt;&lt;figure&gt;&lt;img src=\\\"/images/icons/markers/national-register-of-historic-places.png\\\" alt=\\\"\\\" class=\\\"scale\\\" /&gt;&lt;/figure&gt;&lt;/div&gt;\\n\\t\\t\\t&lt;div class=\\\"rl-content\\\"&gt;&lt;span class=\\\"title\\\"&gt;Christian Peterson Courtyard Sculptures and Dairy Industry Building&lt;/span&gt;&lt;span class=\\\"city\\\"&gt;&lt;a href=\\\"https://maps.google.com/maps?q=42.026731,-93.642860\\\" target=\\\"_blank\\\"&gt;Get Directions&lt;/a&gt;&lt;/span&gt;\\n\\t\\t\\t&lt;span class=\\\"distance\\\"&gt;0.1mi.&lt;/span&gt;&lt;/div&gt;\\n\\t\\t&lt;/div&gt;\\n\\n\\t\\t&lt;p&gt;Christian Petersen was the only sculptor in the Public Works of Art Project in Iowa City in 1934, directed by Iowa Painter Grant Wood. His sculptures here are regarded as &quot;significant artistic statements on agriculture, technology, and higher education in mid-1930s America.&quot; The Christian Peterson Courtyard Sculptures and Dairy Industry Building was added to the National Register of Historic Places in 1987.&lt;/p&gt;\\t\\t\\t\\t\\t\\t\\t\\t&lt;p class=\\\"loc-address\\\"&gt;\\n\\t\\t\\t&lt;strong&gt;Address:&lt;/strong&gt;\\n\\t\\t\\tUnion Dr.&lt;br /&gt;Ames, IA 50010&lt;br /&gt;Story County\\t\\t&lt;/p&gt;\\n\\t\\t\\t\\t\\n\\t\\t&lt;/div&gt;\\n\\t&lt;/div&gt;\"\n        },\n        {\n            \"icon\": \"public-art.png\",\n            \"title\": \"Escalieta I\",\n            \"lat\": \"42.025650\",\n            \"lon\": \"-93.644474\",\n            \"win\": \"&lt;div class=\\\"window-container scroll\\\"&gt;\\n\\t&lt;div class=\\\"image-container\\\"&gt;\\n\\t\\t&lt;img src=\\\"/images/default/arts.jpg\\\" class=\\\"scale\\\" /&gt;\\n\\t&lt;/div&gt;\\n\\t&lt;div class=\\\"window-content\\\"&gt;\\n\\t\\t&lt;div class=\\\"window-title\\\"&gt;\\n\\t\\t\\t&lt;div class=\\\"pin\\\"&gt;&lt;figure&gt;&lt;img src=\\\"/images/icons/markers/public-art.png\\\" alt=\\\"\\\" class=\\\"scale\\\" /&gt;&lt;/figure&gt;&lt;/div&gt;\\n\\t\\t\\t&lt;div class=\\\"rl-content\\\"&gt;&lt;span class=\\\"title\\\"&gt;Escalieta I&lt;/span&gt;&lt;span class=\\\"city\\\"&gt;&lt;a href=\\\"https://maps.google.com/maps?q=42.025650,-93.644474\\\" target=\\\"_blank\\\"&gt;Get Directions&lt;/a&gt;&lt;/span&gt;\\n\\t\\t\\t&lt;span class=\\\"distance\\\"&gt;0.1mi.&lt;/span&gt;&lt;/div&gt;\\n\\t\\t&lt;/div&gt;\\n\\n\\t\\t&lt;p&gt;Manuel Neri created this marble sculpture in 2004. The sculpture references the female form, a goddess figure, in a state of transformation.&lt;/p&gt;\\t\\t\\t\\t\\t\\t\\t\\t&lt;p class=\\\"loc-address\\\"&gt;\\n\\t\\t\\t&lt;strong&gt;Address:&lt;/strong&gt;\\n\\t\\t\\tWallace Rd.&lt;br /&gt;Gerdin Business Building, Iowa State University&lt;br /&gt;Ames, IA 50011&lt;br /&gt;Story County\\t\\t&lt;/p&gt;\\n\\t\\t&lt;p class=\\\"iw-contact\\\"&gt;&lt;i class=\\\"fa fa-phone fa-fw\\\"&gt;&lt;/i&gt; 515.242.6195&lt;/p&gt;\\t\\t&lt;p class=\\\"iw-contact\\\"&gt;&lt;i class=\\\"fa fa-globe fa-fw\\\"&gt;&lt;/i&gt;&lt;a href=\\\"http://www.publicartarchive.org/work/escalieta-i\\\" target=\\\"_blank\\\"&gt;Website&lt;/a&gt;&lt;/p&gt;\\n\\t\\t&lt;/div&gt;\\n\\t&lt;/div&gt;\"\n        },\n        {\n            \"icon\": \"public-art.png\",\n            \"title\": \"History of Dairying\",\n            \"lat\": \"42.026875\",\n            \"lon\": \"-93.642983\",\n            \"win\": \"&lt;div class=\\\"window-container scroll\\\"&gt;\\n\\t&lt;div class=\\\"image-container\\\"&gt;\\n\\t\\t&lt;img src=\\\"https://www.iowacultureapp.com/images/story-artpublic-historyofdairying.jpg\\\" class=\\\"scale\\\" /&gt;\\n\\t&lt;/div&gt;\\n\\t&lt;div class=\\\"window-content\\\"&gt;\\n\\t\\t&lt;div class=\\\"window-title\\\"&gt;\\n\\t\\t\\t&lt;div class=\\\"pin\\\"&gt;&lt;figure&gt;&lt;img src=\\\"/images/icons/markers/public-art.png\\\" alt=\\\"\\\" class=\\\"scale\\\" /&gt;&lt;/figure&gt;&lt;/div&gt;\\n\\t\\t\\t&lt;div class=\\\"rl-content\\\"&gt;&lt;span class=\\\"title\\\"&gt;History of Dairying&lt;/span&gt;&lt;span class=\\\"city\\\"&gt;&lt;a href=\\\"https://maps.google.com/maps?q=42.026875,-93.642983\\\" target=\\\"_blank\\\"&gt;Get Directions&lt;/a&gt;&lt;/span&gt;\\n\\t\\t\\t&lt;span class=\\\"distance\\\"&gt;0.1mi.&lt;/span&gt;&lt;/div&gt;\\n\\t\\t&lt;/div&gt;\\n\\n\\t\\t&lt;p&gt;Christian Peterson, an artist-in-residence at Iowa State University from 1934 to 1955, was commissioned to create this sculptural mural, depicting the history of \\r\\n the dairy industry in Iowa and America, as part of the Depression-era Public Works of Art Project.  The bas relief, measuring 84 inches x 972 inches, took eight months to complete.  This terra cotta work was the beginning of Peterson&#039;s 21 year career as campus sculptor-in-residence.&lt;/p&gt;\\t\\t\\t\\t\\t\\t\\t\\t&lt;p class=\\\"loc-address\\\"&gt;\\n\\t\\t\\t&lt;strong&gt;Address:&lt;/strong&gt;\\n\\t\\t\\tFood Sciences Building Courtyard&lt;br /&gt;Iowa State University&lt;br /&gt;Ames, IA 50010&lt;br /&gt;Story County\\t\\t&lt;/p&gt;\\n\\t\\t&lt;p class=\\\"iw-contact\\\"&gt;&lt;i class=\\\"fa fa-phone fa-fw\\\"&gt;&lt;/i&gt; 515.294.3342&lt;/p&gt;\\t\\t\\n\\t\\t&lt;/div&gt;\\n\\t&lt;/div&gt;\"\n        }\n    ]\n}\n\n\n\n\nShow the code\narts_data = extract_info(arts)\narts_data = pd.DataFrame(arts_data)\narts_data[['city', 'county']] = arts_data['address'].apply(lambda x: pd.Series(extract_city_county(x)))\narts_data['marker'] = arts_data['image'].apply(extract_marker)\narts_data\n\n\n\n\n\n\n\n\n\ntitle\nlatitude\nlongitude\nimage\ndistance\naddress\nphone\nwebsite\ncity\ncounty\nmarker\n\n\n\n\n0\nChristian Peterson Courtyard Sculptures and Da...\n42.026731\n-93.642860\n/images/icons/markers/national-register-of-his...\n0.1mi.\nUnion Dr., Ames, IA 50010, Story County\nNone\nNone\nAmes\nStory\nnational-register-of-historic-places\n\n\n1\nEscalieta I\n42.025650\n-93.644474\n/images/icons/markers/public-art.png\n0.1mi.\nWallace Rd., Gerdin Business Building, Iowa St...\n515.242.6195\nhttp://www.publicartarchive.org/work/escalieta-i\nAmes\nStory\npublic-art\n\n\n2\nHistory of Dairying\n42.026875\n-93.642983\n/images/icons/markers/public-art.png\n0.1mi.\nFood Sciences Building Courtyard, Iowa State U...\n515.294.3342\nNone\nAmes\nStory\npublic-art",
+    "crumbs": [
+      "Measurements",
+      "Iowa Culture App"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-culture.html#cultural_locations_per_10k-cultural",
+    "href": "data-chapters/iowa-culture.html#cultural_locations_per_10k-cultural",
+    "title": "Iowa Culture App",
+    "section": "Cultural_Locations_per_10k (Cultural)",
+    "text": "Cultural_Locations_per_10k (Cultural)\n\nMeasure Description\nThis indicator measures the number of cultural sites—such as museums, monuments, historic landmarks, and public art—per 10,000 residents in a given city or county. It helps assess the density and accessibility of cultural resources across communities. Cultural participation has been linked to better self-reported health, partly due to its social and emotional benefits (Wilkinson et al., 2007). Attending cultural activities often involves social interaction, which can foster support networks that positively influence health and well-being.\n\nCalculation\nFor our analysis, we focused on the total count of historic sites, museums, public art, monuments, and similar locations, collectively referred to as cultural locations. To assess the distribution of these cultural sites within each city or county, we computed the number of cultural locations per 10,000 people. This measure allows us to compare the availability and density of cultural resources across different areas.\nAfter extracting the relevant data from the website, we tallied the total number of cultural locations for each city or county. To calculate our measure of interest (Cultural_Locations_per_10k), we used the following steps:\n\nExtracted city/county population data from the American Community Survey (ACS).\nDivided the total number of cultural locations in each city/county by the population of the corresponding city/county.\nMultiplied the results by 10,000 to express the number of cultural locations per 10,000 people.\n\nThus, the final measure Cultural_Locations_per_10k was obtained using this formula:\n\\[\n\\text{Cultural\\_Locations\\_per\\_10k} = \\frac{\\text{Total Number of Cultural Locations}}{\\text{Population}} \\times 10,000\n\\]",
+    "crumbs": [
+      "Measurements",
+      "Iowa Culture App"
+    ]
+  },
+  {
+    "objectID": "data-chapters/travel.html",
+    "href": "data-chapters/travel.html",
+    "title": "Travel Iowa",
+    "section": "",
+    "text": "Brief Description\nTravel Iowa is the official tourism website for the state of Iowa, offering a wealth of information for those looking to explore. It includes details on new events and attractions, birding spots, stargazing locations, nostalgic soda fountains, and more.",
+    "crumbs": [
+      "Measurements",
+      "Travel Iowa"
+    ]
+  },
+  {
+    "objectID": "data-chapters/travel.html#source",
+    "href": "data-chapters/travel.html#source",
+    "title": "Travel Iowa",
+    "section": "Source",
+    "text": "Source\nTravel Iowa\nA sample code to extract the data from Travel Iowa is illustrated below. A complete code is located in the html file …… This process below is specific to the nature of the html format we were able to retrieve from the travel Iowa website.\n\n\nShow the code\npip install bs4\n\n\n\n\nShow the code\nhtml_doc = \"\"\"\n\n&lt;div id=\"top\"&gt;\n    &lt;div id=\"ctl00_phMainContent_div3\" class=\"listControls\"&gt;\n        &lt;div class=\"results\"&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n\n    \n    &lt;div ID=\"pnlControls\" style=\"display:none;\"&gt;\n        &lt;div class=\"listControls\" id=\"div4\"&gt;\n\n            &lt;div class=\"pager\"&gt;\n                &lt;ul&gt;\n                    &lt;li&gt;\n                        &lt;div id=\"pnlListingPager\"&gt;\n                            Page:\n                            &lt;span id=\"dpListing\"&gt;\n                                        &lt;span class=\"activePage\"&gt;1&lt;/span&gt;\n                                &lt;a class=\"previous\" data-pager-page=\"0\"&gt;previous&lt;/a&gt;\n                                &lt;a class=\"next\" data-pager-page=\"0\"&gt;next&lt;/a&gt;\n                            &lt;/span&gt;\n                            of 1\n                        &lt;/div&gt;\n                    &lt;/li&gt;\n                &lt;/ul&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n\n    &lt;div class=\"grid\"&gt;\n        &lt;div class=\"item\"&gt;\n            &lt;div class=\"item-text\"&gt;\n                &lt;div class=\"item-date\"&gt;Jul&nbsp;&lt;span&gt;4 -&nbsp;7&lt;/span&gt;&lt;/div&gt;\n                &lt;h3 class=\"item-title\"&gt;\n                    &lt;a href=\"/calendar/flea-market-under-the-bridge/1647514\"&gt;Flea Market Under the Bridge&lt;/a&gt;\n                &lt;/h3&gt;\n                &lt;div class=\"item-city\"&gt;Marquette&lt;/div&gt;\n                &lt;div class=\"item-venue\"&gt;\n                    &lt;span&gt;Venue:&lt;/span&gt; &lt;a href=\"/calendar/flea-market-under-the-bridge/1647514\"&gt;Flea Market&lt;/a&gt;\n                &lt;/div&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\"item\"&gt;\n            &lt;div class=\"item-text\"&gt;\n                &lt;div class=\"item-date\"&gt;Jul&nbsp;&lt;span&gt;1 -&nbsp;&lt;/span&gt;Oct&nbsp;&lt;span&gt;31&lt;/span&gt;&lt;/div&gt;\n                &lt;h3 class=\"item-title\"&gt;\n                    &lt;a href=\"/calendar/historic-hills-scenic-byway-bale-trail/1643930\"&gt;Historic Hills Scenic Byway Bale Trail&lt;/a&gt;\n                &lt;/h3&gt;\n                &lt;div class=\"item-city\"&gt;Fairfield&lt;/div&gt;\n                &lt;div class=\"item-venue\"&gt;\n                    &lt;span&gt;Venue:&lt;/span&gt; &lt;a href=\"/calendar/historic-hills-scenic-byway-bale-trail/1643930\"&gt;Historic Hills Scenic Byway&lt;/a&gt;\n                &lt;/div&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\"end-grid-action\"&gt;\n            &lt;button class=\"button\" id=\"btnShowMoreEvents\"&gt;Show More Events&lt;/button&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div ID=\"pnlControls2\" style=\"display:none;\"&gt;\n        &lt;div class=\"listControls\" id=\"div1\"&gt;\n\n            &lt;div class=\"pager\"&gt;\n                &lt;ul&gt;\n                    &lt;li&gt;\n                        &lt;div id=\"pnlListingPager\"&gt;\n                            Page:\n                            &lt;span id=\"dpListing\"&gt;\n                                        &lt;span class=\"activePage\"&gt;1&lt;/span&gt;\n                                &lt;a class=\"previous\" data-pager-page=\"0\"&gt;previous&lt;/a&gt;\n                                &lt;a class=\"next\" data-pager-page=\"0\"&gt;next&lt;/a&gt;\n                            &lt;/span&gt;\n                            of 1\n                        &lt;/div&gt;\n                    &lt;/li&gt;\n                &lt;/ul&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n\n\n\n&lt;/div&gt;\n\n\n\"\"\"\n\n\n\n\nShow the code\nimport pandas as pd\nfrom bs4 import BeautifulSoup\npd.set_option('display.max_colwidth', None)\nimport warnings\nwarnings.filterwarnings('ignore')\n\n# Base URL\nbase_url = \"https://www.traveliowa.com\"\n\n# Parse the HTML content\nsoup = BeautifulSoup(html_doc, 'html.parser')\n\n# Find all divs with class 'item'\nitems = soup.find_all('div', class_='item')\n\n# Initialize a list to store the extracted data\ndata = []\n\n# Extract data from each item\nfor item in items:\n    date = item.find('div', class_='item-date').get_text(strip=True)\n    title_tag = item.find('h3', class_='item-title').find('a')\n    title = title_tag.get_text(strip=True)\n    link = base_url + title_tag['href']\n    city = item.find('div', class_='item-city').get_text(strip=True)\n\n    # Check if the venue div and its a tag exist\n    venue_div = item.find('div', class_='item-venue')\n    if venue_div and venue_div.find('a'):\n        venue = venue_div.find('a').get_text(strip=True)\n    else:\n        venue = 'Venue information not available'\n\n    # Append the extracted data to the list\n    data.append({\n        'Date': date,\n        'Title': title,\n        'Link': link,\n        'City': city,\n        'Venue': venue\n    })\n\n# Create a DataFrame from the list of dictionaries\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDate\nTitle\nLink\nCity\nVenue\n\n\n\n\n0\nJul4 - 7\nFlea Market Under the Bridge\nhttps://www.traveliowa.com/calendar/flea-market-under-the-bridge/1647514\nMarquette\nFlea Market\n\n\n1\nJul1 -Oct31\nHistoric Hills Scenic Byway Bale Trail\nhttps://www.traveliowa.com/calendar/historic-hills-scenic-byway-bale-trail/1643930\nFairfield\nHistoric Hills Scenic Byway",
+    "crumbs": [
+      "Measurements",
+      "Travel Iowa"
+    ]
+  },
+  {
+    "objectID": "data-chapters/travel.html#events_per_10k-cultural",
+    "href": "data-chapters/travel.html#events_per_10k-cultural",
+    "title": "Travel Iowa",
+    "section": "Events_per_10k (Cultural)",
+    "text": "Events_per_10k (Cultural)\n\nMeasure Description & Calculation\nIn our analysis, we focused on the total number of past and future events (2021-2025) for each city. We calculated the total events per 10,000 people to evaluate their distribution across the cities.\nAfter extracting the relevant data from the website, we tallied the total number of events for each city. To calculate our measure of interest (Events_per_10k), we used the following steps:\n\nExtracted city population data from the American Community Survey (ACS).\nDivided the total number of events in each city by the population of the corresponding city.\nMultiplied the results by 10,000 to express the number of events per 10,000 people.\n\nThus, the final measure Events_per_10k was obtained using this formula:\n\\[\n\\text{Events\\_per\\_10k} = \\frac{\\text{Total Number of Events}}{\\text{Population}} \\times 10,000\n\\]",
+    "crumbs": [
+      "Measurements",
+      "Travel Iowa"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-state-lib.html",
+    "href": "data-chapters/iowa-state-lib.html",
+    "title": "State Library of Iowa",
+    "section": "",
+    "text": "Brief Description\nState Library of Iowa provides statistics on income, expenditures, collections, circulation and other measures. It is split up by a cities size and name. We looked at the fiscal year 2023, which is July 1, 2022 - June 30, 2023.",
+    "crumbs": [
+      "Measurements",
+      "State Library of Iowa"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-state-lib.html#source",
+    "href": "data-chapters/iowa-state-lib.html#source",
+    "title": "State Library of Iowa",
+    "section": "Source",
+    "text": "Source\nState Library of Iowa\nCity data from ACS 5-year report, 2022",
+    "crumbs": [
+      "Measurements",
+      "State Library of Iowa"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-state-lib.html#measures",
+    "href": "data-chapters/iowa-state-lib.html#measures",
+    "title": "State Library of Iowa",
+    "section": "Measures",
+    "text": "Measures\n\nPer Capita Expenditures (Financial)\n\nMeasure Description & Calculation\nPer Capita Expenditures are the average amount of money a library spent per person in a city.\n\\[\n\\text{Per Capita Expenditures} = \\frac{\\text{Total Expenditures}}{\\text{Population}}\n\\]\n\n\n\nTotal Library Expenditures per 10,000 people (Financial)\n\nMeasure Description & Calculation\nPer Capita Expenditures are the average amount of money a library spent per 10,000 people in a city.\n\\[\n\\text{Total Library Expenditures per 10k} = \\frac{\\text{Total Expenditures}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nStaff Expenditures per 10,000 people (Financial)\n\nMeasure Description & Calculation\nStaff expenditures is the amount of money spent on paying library staff. The city Library staff expenditures per 10,000 people in a city.\n\\[\n\\text{Staff Expenditures per 10k} = \\frac{\\text{Staff Expenditures}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nCollection Expenditures per 10,000 people (Financial)\n\nMeasure Description & Calculation\nLibrary collection expenditrues are the operating expenses that are used to buy materials in their collections. The Collection Expenditure Per 10,000 People calculates the Library collection expenditures per 10,000 people in a city.\n\\[\n\\text{Collection Expenditures per 10k} = \\frac{\\text{Collection Expenditures}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nBook Circ per 10,000 people (Cultural)\n\nMeasure Description & Calculation\nBook circulation accounts for the frequency that books are borrowed and returned to a library. Book Circ Per 10,000 People measures the circulation of books within a city per 10,000 people.\n\\[\n\\text{Book Circ per 10k} = \\frac{\\text{Book1}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nBooks by Physical Items (Built)\n\nMeasure Description & Calculation\nThe proportion of physical items that are books in a library.\n\\[\n\\text{Books by Physical Items} = \\frac{\\text{Book1}}{\\text{Total Phys1}}\n\\]\n\n\n\nBook Percent (Built)\n\nMeasure Description & Calculation\nProportion of physical books out of all the items in a library.\n\\[\n\\text{Book Percent} = \\frac{\\text{Book1}}{\\text{Total Use}}\n\\]\n\n\n\nNum Programs per 10,000 people (Social)\n\nMeasure Description & Calculation\nThe number of library programs across all ages per 10,000 people in a city.\n\\[\n\\text{Num Programs per 10k} = \\frac{\\text{Prog6}}{\\text{Population}}\\times 10000\n\\]\nProg6: Total number of programs in a city\n\n\n\nNum of Attend per Pop (Social)\n\nMeasure Description & Calculation\nThe proportion of library program attendance in a city.\n\\[\n\\text{Num of Attend per Pop} = \\frac{\\text{Attend6}}{\\text{Population}}\n\\]\nAttend6: Total number of program attendance in a city\n\n\n\nTotal Kid Programs (Social)\n\nMeasure Description & Calculation\nThe total amount of kid programs that a library has in a city.\n\\[\n\\text{Total Kid Programs} = \\text{Prog 1} + \\text{Prog 2}\n\\]\n\n\n\nNum Kid Programs per 10,000 people (Social)\n\nMeasure Description & Calculation\nThe number of kid programs that a library has per 10,000 people in a city.\n\\[\n\\text{Num Kid Programs per 10k} = \\frac{\\text{Total Kid Programs}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nVisits per Capita (Social)\n\nMeasure Description & Calculation\nPer Capita library visits are the average amount of visits a library get in a city.\n\\[\n\\text{Visits per Capita} = \\frac{\\text{Visits}}{\\text{Population}}\n\\]\n\n\n\nVisits per 10,000 people (Social)\n\nMeasure Description & Calculation\nThe number of library visits per 10,000 people in a city.\n\\[\n\\text{Visits per 10k} = \\frac{\\text{Visits}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nWireless Sessions per 10,000 people (Built)\n\nMeasure Description & Calculation\nThe number of wireless sessions at a library per 10,000 people in a city.\n\\[\n\\text{Wireless Sessions per 10k} = \\frac{\\text{Wireless Sessions}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nWebsite visits per 10,000 People (Social)\n\nMeasure Description & Calculation\nThe number of library website visits per 10,000 in a city.\n\\[\n\\text{Website visits per 10k} = \\frac{\\text{Website Visits}}{\\text{Population}}\\times 10000\n\\]",
+    "crumbs": [
+      "Measurements",
+      "State Library of Iowa"
+    ]
+  },
+  {
+    "objectID": "data-chapters/bea.html",
+    "href": "data-chapters/bea.html",
+    "title": "Bureau of Economic Analysis",
+    "section": "",
+    "text": "Brief Description\nBureau of Economic Analysis provides data about GDP of different industries.",
+    "crumbs": [
+      "Measurements",
+      "Bureau of Economic Analysis"
+    ]
+  },
+  {
+    "objectID": "data-chapters/bea.html#source",
+    "href": "data-chapters/bea.html#source",
+    "title": "Bureau of Economic Analysis",
+    "section": "Source",
+    "text": "Source\nGDP of Industries in Iowa",
+    "crumbs": [
+      "Measurements",
+      "Bureau of Economic Analysis"
+    ]
+  },
+  {
+    "objectID": "data-chapters/bea.html#measures",
+    "href": "data-chapters/bea.html#measures",
+    "title": "Bureau of Economic Analysis",
+    "section": "Measures",
+    "text": "Measures\n\nGDP of Agriculture, forestry, fishing and hunting (2022) (Natural)\n\nMeasure Description & Calculation\nGross domestic product of agriculture, forestry, fishing and hunting sector that measures the value of the goods and services produced by establishments in this sector, minus the value of the goods and services used to produce them. Agriculture, forestry, fishing and hunting NAICS sector include establishments primarily engages in growing in crops, raising animals, harvesting timber, harvesting fish and other animals from a farm, ranch or their natural habitats. These establishments are often described as farms, ranches, diaries, greenhouses, nurseries, orchards or hatcheries.\n\\[\\text{pct\\_gdp\\_ag\\_for\\_fish\\_hunt = }\\frac{\\text{GDP of Agriculture, forestry, fishing and hunting}}{\\text{Total GDP of County}}\\]\n\n\n\nGDP of Mining, quarrying, and oil and gas extraction (2022) (Natural)\n\nMeasure Description & Calculation\nThe gross domestic product from mining, quarrying, and oil and gas extraction measures the economic output. Mining, quarrying, and oil and gas extraction is a sector under NAICS. It comprises establishments that extract naturally assuring mineral solid, liquid minerals, and gases. The term mining in this case includes quarrying, well operations, beneficiating, and other preparation customarily performed at the mine site or mining activity.\n\\[\\text{pct\\_gdp\\_mine = }\\frac{\\text{GDP of Mining, quarrying, and oil and gas extraction}}{\\text{Total GDP of County}}\\]\n\n\n\nGDP of Finance (2022) (Financial)\n\nMeasure Description & Calculation\nIncludes finance, insurance, real estate, rental, and leasing. Finance and insurance sector is comprises of primarily financial transactions (creation, liquidation, or change in ownership of financial assets) and/or facilitating financial transactions. Three principle types of activities are identified. Pooling of risk by underwriting insurance and annuities, providing specialized services facilitating or supporting financial intermediation, insurance, and employee benefit programs. monetary authorities charged with monetary control.\n\\[\\text{pct\\_gdp\\_finance\\_insure = }\\frac{\\text{GDP of Finance}}{\\text{Total GDP of County}}\\]\n\n\n\nGDP of Manufacturing (2022) (Financial)\n\nMeasure Description & Calculation\nThe Manufacturing NAICS sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.\n\\[\\text{pct\\_gdp\\_manufacturing = }\\frac{\\text{GDP of Manufacturing}}{\\text{Total GDP of County}}\\]\n\n\n\nGDP per Capita (2022) (Financial)\n\nMeasure Description & Calculation\nThis measure includes GDP in all NAICS categories, divided by the total population in a county. It serves as a measure of economic productivity adjusted by population. The final measure has a unit of thousands of dollars per person.\n\\[\\text{gdp\\_per\\_capita = }\\frac{\\text{Total GDP of County}}{\\text{Total Population of County}}\\]",
+    "crumbs": [
+      "Measurements",
+      "Bureau of Economic Analysis"
+    ]
+  },
+  {
+    "objectID": "data-chapters/cbp.html",
+    "href": "data-chapters/cbp.html",
+    "title": "County Business Patterns",
+    "section": "",
+    "text": "Source\nCounty Business Patterns",
+    "crumbs": [
+      "Measurements",
+      "County Business Patterns"
+    ]
+  },
+  {
+    "objectID": "data-chapters/cbp.html#brief-description",
+    "href": "data-chapters/cbp.html#brief-description",
+    "title": "County Business Patterns",
+    "section": "Brief Description",
+    "text": "Brief Description\nCounty Business Patterns include data about the number and size of businesses at the county level, such as the count of businesses with certain ranges of employees. The data also includes aggregated payroll data for those businesses.",
+    "crumbs": [
+      "Measurements",
+      "County Business Patterns"
+    ]
+  },
+  {
+    "objectID": "data-chapters/cbp.html#measures",
+    "href": "data-chapters/cbp.html#measures",
+    "title": "County Business Patterns",
+    "section": "Measures",
+    "text": "Measures\n\nPercent of total businesses that are small (&lt;=4 employees) (Financial)\n\nMeasure Description\nThis indicator measures the proportion of businesses within a community that have fewer than four employees. A higher percentage of such small businesses is often indicative of a robust entrepreneurial environment. Research demonstrates that communities with a greater concentration of small businesses tend to exhibit better population health outcomes. This relationship is attributed to the role of small businesses in enhancing social capital by fostering local networks, civic engagement, and collective efficacy. Small businesses also contribute to local economic development by creating jobs, retaining wealth within the community, and stimulating economic diversification (Blanchard et al., 2012).\n\n\nCalculation\nThis measure is calculated as the number of businesses that are small (less than or equal to 4 employees) divided by the total number of businesses.\n\\[{\\text{pct\\_small\\_businesses =}}\\frac{\\text{small\\_business\\_count}}{\\text{total\\_business\\_count}}\\]",
+    "crumbs": [
+      "Measurements",
+      "County Business Patterns"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fema.html",
+    "href": "data-chapters/fema.html",
+    "title": "FEMA National Risk Index",
+    "section": "",
+    "text": "Brief Description\nThe FEMA National Risk Index Dataset provides information on the annual events from various natural disasters across the United States. It is designed to help communities understand their risk levels and make informed decisions about mitigation and preparedness.",
+    "crumbs": [
+      "Measurements",
+      "FEMA National Risk Index"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fema.html#source",
+    "href": "data-chapters/fema.html#source",
+    "title": "FEMA National Risk Index",
+    "section": "Source",
+    "text": "Source\nFEMA NRI",
+    "crumbs": [
+      "Measurements",
+      "FEMA National Risk Index"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fema.html#measures",
+    "href": "data-chapters/fema.html#measures",
+    "title": "FEMA National Risk Index",
+    "section": "Measures",
+    "text": "Measures\nWe are using the Natural Hazard Annualized Frequency, which is the expected frequency or probability of a hazard occurrence per year. It takes the number of recorded hazard occurrences each year over a given period or probability of a hazard occurrence each year.\n\nFlood_Annual_Events (Natural)\n\nThe annualized frequency value represents the number of Riverine Flooding Occurrences, in event-day, each year over the period of record. It is initially calculated at the county level. The NCEI Storm Events Database Riverine Flooding events for the county divided by the period of record.\n\n\n\nHeat_Annual_Events (Natural)\n\nThe annualized frequency of Heat Waves in an area is estimated by the number of recorded Heat Wave occurrences, in event-days, each year over the period of record. It is calculated by the number of Heat Wave event-days that intersect the Census block divided by the period of record for Heat Wave.\n\n\n\nHail_Annual_Events (Natural)\n\nThe annualized frequency of Hail is estimated by the number of recorded Hail occurrences, in events, each years over the period of record. It is calculated by the scaled count of Hail events calculated for the Census block divdided by the period of record for Hail.\n\n\n\nWind_Annual_Events (Natural)\n\nThe annualized frequency of Strong Wind events in an area is estimated by the number of recorded Strong Wind occurrences, in events, each year over the period of record. It is calculated byt the scaled count of Strong Wind events calculated for the Census block divided by the period of record for Strong Wind.\n\n\n\nTornado_Annual_Events (Natural)\n\nThe annualized frequency of Tornado is estimated by the number of Tornado occurrences, in events, each year for a specific area. It is calculated by the count of distinct Tornado events of a sub-type that have occurred in the U.S. divided by the summed total count of all 80-km buffed Tornado-fishnet grid cell intersections of a Tornado sub-type in the U.S.\n\n\n\nWinter_Annual_Events (Natural)\n\nThe annualized frequency of Winter Weather events in an area is estimated by the number of recorded Winter Weather occurrences, in event-days, each year over the period of record. It is calculated by the number of Winter Weather event-days that intersect the Census block divided by the period of record Winter Weather.\n\n\n\nIce_Annual_Events (Natural)\n\nThe annualized frequency of Ice Storm represents the estimated number of recorded Ice Storm occurrences, in event-days, each year for a specific area. It is calculated by the number of historic Ice Storm event-days calculated for the Census block divided by the period of record for Ice Storm.\n\n\n\nDrought_Annual_Events (Natural)\n\nThe annualized frequency of Drought represents the number of recorded Drought occurrences, in event-days, each year over the period of record. It is calculated by the number of event-days that intersect the Census tract divided by the period of Drought.",
+    "crumbs": [
+      "Measurements",
+      "FEMA National Risk Index"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fema.html#measure-calculation",
+    "href": "data-chapters/fema.html#measure-calculation",
+    "title": "FEMA National Risk Index",
+    "section": "Measure Calculation",
+    "text": "Measure Calculation\nThe measure values are taken from FEMA National Risk Index data.",
+    "crumbs": [
+      "Measurements",
+      "FEMA National Risk Index"
+    ]
+  },
+  {
+    "objectID": "data-chapters/usda-census.html",
+    "href": "data-chapters/usda-census.html",
+    "title": "US Department of Agriculture Census",
+    "section": "",
+    "text": "Brief Description\nThe United States Department of Agriculture is the federal executive department responsible for developing and executing federal laws related to farming, forestry, rural economic development, and food.",
+    "crumbs": [
+      "Measurements",
+      "US Department of Agriculture Census"
+    ]
+  },
+  {
+    "objectID": "data-chapters/usda-census.html#measures",
+    "href": "data-chapters/usda-census.html#measures",
+    "title": "US Department of Agriculture Census",
+    "section": "Measures",
+    "text": "Measures\n\nPercentage of Cropland (Natural)\n\nMeasure Description\nThis indicator measures the proportion of land in a county used for growing crops. It is derived from annual crop acreage reports submitted to the USDA, which detail land use, crop types, and locations. Counties with high cropland percentages may rely heavily on natural resources for economic stability. However, research suggests that natural resource dependence—particularly in rural areas—can be linked to lower long-term economic prosperity and underinvestment in human capital. Monitoring cropland levels is critical not only for resource management and conservation (natural capital), but also for understanding economic risk and financial resilience in agricultural communities (financial capital) (Mueller, 2020).\n\n\nCalculation\ncrop_area: areas of land used for agriculture - crop land, taken from USDA data county_area: areas of the whole counties across the state of Iowa, calculated by using sf package and passing the geometry \\[{\\text{prop\\_crop =}}\\frac{\\text{crop area}}{\\text{county area}}\\]\n\n\n\nValue Per Acre (Natural)\n\nMeasure Description & Calculation\nValue of every acre of agricultural land - crop land, taken from USDA data\nDirectly extract the value per acre from USDA data (value_per_acre).",
+    "crumbs": [
+      "Measurements",
+      "US Department of Agriculture Census"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-dnr.html",
+    "href": "data-chapters/iowa-dnr.html",
+    "title": "Iowa Department of Natural Resources",
+    "section": "",
+    "text": "Brief Description\nThe Iowa Department of Natural Resources provides data regarding natural aspects such as streams, forest reserve programs, public areas, lakes and wetlands.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Natural Resources"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-dnr.html#source",
+    "href": "data-chapters/iowa-dnr.html#source",
+    "title": "Iowa Department of Natural Resources",
+    "section": "Source",
+    "text": "Source\nWetlands in Iowa\nForestry in Iowa\nStreams in Iowa\nLakes in Iowa\nPublic Areas in Iowa",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Natural Resources"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-dnr.html#measures",
+    "href": "data-chapters/iowa-dnr.html#measures",
+    "title": "Iowa Department of Natural Resources",
+    "section": "Measures",
+    "text": "Measures\n\nWetlands (Natural)\nA wetland is an area of land that is continuously or periodically wet throughout the year. In Iowa.gov it states that a “Designated wetland” means land designated as a protected wetland by the United States Department of the Interior or the Department of Natural Resources. It does not include land where an agricultural drainage well has been plugged causing a temporary wetland or land within a drainage district or levee district.\n\nMeasure Description & Calculation\nWetland_Acres_Prop: Calculated the proportion of wetlands acres per county to the total acres per county.\n\\[\\text{Wetland\\_Acres\\_Prop =} \\frac{\\text{Wetland Acres}} {\\text{county area}}\\]\n\n\n\nForestry (Natural)\nThe Iowa Legislature passed a landowner property tax incentive known as the Forest and Fruit Tree Reservation Act (Forest Reserve) in 1906. The act is to reduce or eliminate property taxes to incentive landowners to grow tress on their less fertile or productive land. It is a source of farm income, erosion control, watershed protection and game cover.\n\nMeasure Description & Calculation\nforest_acres_prop_county: Calculated the proportion of forest acres per county to the total acres per county. The most updated year for forest acres we have is 2020.\n\\[\\text{2020 Forest Acres Prop =} \\frac{\\text{2020 Forest Acres}} {\\text{county area\n}}\\]\n\n\n\nTotal Stream Length (Natural)\nThe stream length is the total distance of a stream channel within Iowa. Helps the understanding of water flow patterns, potential flood risks, aquatic habitat availability.\n\nMeasure Description & Calculation\nStream Length in Miles: Using R, find the geometry of counties (using counties() of tigris) and use st_intersection() to take the geometry intersection of the streams and counties. Apply st_length() to calculate the length of streams and group by county.\n\n\n\nProportion of Lakes in Iowa (Natural)\nThe proportion of lakes in Iowa is the percentage of land area that lakes cover. This information tells you how much lakes make up the state of Iowa.\n\nMeasure Description & Calculation\nProportion of Lakes: Using R, find the lake_area of each lake using st_area of the geometry column. Group by county and sum up all the lake areas. Calculate the proportion of lake by dividing the lake_area by the county area (taken from counties() function in tigris package)\n\n\n\nProportion of Public Areas in Iowa (Natural)\nThe public area represents conservation and recreation lands in the state of Iowa. The sources are mainly from agency responsible for the area.\n\nMeasure Description & Calculation\nProportion of Public Areas: Using R, find the public_area of each lake using st_area of the geometry column. Group by county and sum up all the public areas. Calculate the proportion of lake by dividing the public_area by the county area (taken from counties() function in tigris package)",
+    "crumbs": [
+      "Measurements",
+      "Iowa Department of Natural Resources"
+    ]
+  },
+  {
+    "objectID": "data-chapters/environ-justice.html",
+    "href": "data-chapters/environ-justice.html",
+    "title": "Environmental Justice Screening Tool",
+    "section": "",
+    "text": "Brief Description\nThe Environmental Justice Screening Tool Dataset provides information on various environmental and health hazards that can affect communities, helping to identify areas with higher risks and vulnerabilities. It includes pre-calculated measures such as air toxics cancer risk, respiratory hazard index, and proximity to hazardous waste.",
+    "crumbs": [
+      "Measurements",
+      "Environmental Justice Screening Tool"
+    ]
+  },
+  {
+    "objectID": "data-chapters/environ-justice.html#source",
+    "href": "data-chapters/environ-justice.html#source",
+    "title": "Environmental Justice Screening Tool",
+    "section": "Source",
+    "text": "Source\nEPA - EJScreen",
+    "crumbs": [
+      "Measurements",
+      "Environmental Justice Screening Tool"
+    ]
+  },
+  {
+    "objectID": "data-chapters/environ-justice.html#measures",
+    "href": "data-chapters/environ-justice.html#measures",
+    "title": "Environmental Justice Screening Tool",
+    "section": "Measures",
+    "text": "Measures\n\nCancer_Risk (CANCER) (Natural)\n\nEvaluates the risk of cancer associated with exposure to air toxics.\n\n\n\nResp_Hazard_Index (RESP) (Natural)\n\nAssesses the risk to respiratory health from exposure to air toxics.\n\n\n\nToxic_Release_Air (RESP_AIR) (Natural)\n\nMeasures the amount of toxic substances released into the air.\n\n\n\nHazard_Waste_Prox (PTSDF) (Natural)\n\nIndicates the proximity to hazardous waste sites.\n\n\n\nWastewater_Discharge (PWDIS) (Natural)\n\nRepresents the quantity of wastewater discharged into the environment.\n\nAll of these measures were pre-calculated, with detailed information on their exact calculation available in the data source PDF. While the dataset includes numerous potential measures, we focused on using the most general ones.\nEJScreen Technical Documentation",
+    "crumbs": [
+      "Measurements",
+      "Environmental Justice Screening Tool"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fec.html",
+    "href": "data-chapters/fec.html",
+    "title": "Federal Election Commission",
+    "section": "",
+    "text": "Source\nFederal Election Commission",
+    "crumbs": [
+      "Measurements",
+      "Federal Election Commission"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fec.html#brief-description",
+    "href": "data-chapters/fec.html#brief-description",
+    "title": "Federal Election Commission",
+    "section": "Brief Description",
+    "text": "Brief Description\nPolitical candidates for federal offices submit campaign contribution data to the Federal Election Commission, which makes the data publicly available for download. For this project, individual contribution data for the years XXXX to XXXX was downloaded, aggregated by city, and cleaned by city names to match with other city datasets.",
+    "crumbs": [
+      "Measurements",
+      "Federal Election Commission"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fec.html#measures",
+    "href": "data-chapters/fec.html#measures",
+    "title": "Federal Election Commission",
+    "section": "Measures",
+    "text": "Measures\n\nFederal political contributions per adult (Political)\nThis measure is the total federal political contributions in a community divided by the total number of adults in a community.\n\nMeasure Description & Calculation\n\\[{\\text{pct\\_small\\_businesses = }}\\frac{\\text{small\\_business\\_count}}{\\text{total\\_business\\_count}}\\]",
+    "crumbs": [
+      "Measurements",
+      "Federal Election Commission"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fbi-crime.html",
+    "href": "data-chapters/fbi-crime.html",
+    "title": "Federal Bureau of Investigations Crime Reports",
+    "section": "",
+    "text": "Brief Description",
+    "crumbs": [
+      "Measurements",
+      "Federal Bureau of Investigations Crime Reports"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fbi-crime.html#brief-description",
+    "href": "data-chapters/fbi-crime.html#brief-description",
+    "title": "Federal Bureau of Investigations Crime Reports",
+    "section": "",
+    "text": "Uniform Crime Reporting Program Data\nThe FBI Crime Reports dataset provides detailed information on various criminal activities across different counties. For our analysis, we primarily focused on violent offenses such mas murder, forcible rape, robbery, and aggravated assault. We calculated the crime rate per 10,000 people to understand the prevalence of these violent crimes in each county.\n\n\nCommunity Social Context FBI\nThe report provides property crime and violent crime data for cities and counties in Iowa. It provides the total number of property and violent crimes along with the property and violent crime rate per 10,000 people.",
+    "crumbs": [
+      "Measurements",
+      "Federal Bureau of Investigations Crime Reports"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fbi-crime.html#focusing-on-violent-crimes",
+    "href": "data-chapters/fbi-crime.html#focusing-on-violent-crimes",
+    "title": "Federal Bureau of Investigations Crime Reports",
+    "section": "Focusing on Violent Crimes",
+    "text": "Focusing on Violent Crimes\n\nMurder: 11(Non-negligent)\nForcible Rape: 20\nRobbery: 30\nAggravated Assault: 40",
+    "crumbs": [
+      "Measurements",
+      "Federal Bureau of Investigations Crime Reports"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fbi-crime.html#source",
+    "href": "data-chapters/fbi-crime.html#source",
+    "title": "Federal Bureau of Investigations Crime Reports",
+    "section": "Source",
+    "text": "Source\nUniform Crime Reporting Program Data Community Social Context FBI City Data from 2005-2020 Community Social Context FBI County Data from 2005-2020",
+    "crumbs": [
+      "Measurements",
+      "Federal Bureau of Investigations Crime Reports"
+    ]
+  },
+  {
+    "objectID": "data-chapters/fbi-crime.html#measures",
+    "href": "data-chapters/fbi-crime.html#measures",
+    "title": "Federal Bureau of Investigations Crime Reports",
+    "section": "Measures",
+    "text": "Measures\n\nviolentcrime (Social)\n\nMeasure Description & Calculation\n\nTotal number of violent crimes reported in 2020. Data was reported by the FBI for selected places and counties. County counts reflect the sum of all reported offenses from agencies within the county that submitted data to the FBI. The county count may not include all offenses if agencies within the county did not report or if reported figures did not comply with FBI reporting standards. Those places or counties either not reporting to the FBI or not complying with FBI reporting standards and, thus, not compiled by the FBI, are shown as having Insufficient Data in the map. FBI UCR data should not be compared across places or counties, and should not be compared from one year to another. For information on how PolicyMap assigned FBI data to map areas using a DOJ equivalency table, as the FBI does not provide geographic identifiers, see the Data Directory. PolicyMap last updated this data in February 2022.\n\n\n\n\nviolentcrimert (Social)\n\nMeasure Description & Calculation\n\nTotal number of violent crimes reported per 100,000 people in 2020. PolicyMap divided the total number of violent crimes that were reported in a county or place by the population count provided by the FBI and multiplied that ratio by 100,000. The place population count is an estimate from the FBI. The county population count is an estimate of the number of people served by the agencies within the county that report offenses. Data was reported to the FBI for selected places and counties by the FBI. County counts reflect the sum of all reported offenses from agencies within the county that submitted data to the FBI. The county count may not include all offenses if agencies within the county did not report or if reported figures did not comply with FBI reporting standards. Those places or counties either not reporting to the FBI or not complying with FBI reporting standards and, thus, not compiled by the FBI, are shown as having Insufficient Data in the map. PolicyMap recommends consulting the Data Directory for more information on the data. PolicyMap last updated this data in February 2022.\n\n\n\n\npropertycrime (Social)\n\nMeasure Description & Calculation\n\nTotal number of property crimes reported in 2020. Data was reported by the FBI for selected places and counties. County counts reflect the sum of all reported offenses from agencies within the county that submitted data to the FBI. The county count may not include all offenses if agencies within the county did not report or if reported figures did not comply with FBI reporting standards. Those places or counties either not reporting to the FBI or not complying with FBI reporting standards and, thus, not compiled by the FBI, are shown as having Insufficient Data in the map. FBI UCR data should not be compared across places or counties, and should not be compared from one year to another. For information on how PolicyMap assigned FBI data to map areas using a DOJ equivalency table, as the FBI does not provide geographic identifiers, see the Data Directory. PolicyMap last updated this data in February 2022.\n\n\n\n\npropertyrt (Social)\n\nMeasure Description & Calculation\n\nTotal number of property crimes reported per 100,000 people in 2020. PolicyMap divided the total number of property crimes that were reported in a county or place by the population count provided by the FBI and multiplied that ratio by 100,000.The place population count is an estimate from the FBI. The county population count is an estimate of the number of people served by the agencies within the county that report offenses. Data was reported to the FBI for selected places and counties by the FBI. County counts reflect the sum of all reported offenses from agencies within the county that submitted data to the FBI. The county count may not include all offenses if agencies within the county did not report or if reported figures did not comply with FBI reporting standards. Those places or counties either not reporting to the FBI or not complying with FBI reporting standards and, thus, not compiled by the FBI, are shown as having Insufficient Data in the map. PolicyMap recommends consulting the Data Directory for more information on the data. PolicyMap last updated this data in February 2022.\nDivided the total number of violent crimes in each county by the county’s population.\n\n\n\n\nCrime_rate_per_10K (Social)\n\nMeasure Description & Calculation\n\nThe crime rate per 10,000 people is calculated by taking the total number of violent crimes divided by the population times 10,000.\n\n\\[\n\\text{Crime\\_rate\\_per\\_10K} = \\frac{\\text{Total Number of Violent Crimes}}{\\text{Population}} \\times 10,000\n\\]",
+    "crumbs": [
+      "Measurements",
+      "Federal Bureau of Investigations Crime Reports"
+    ]
+  },
+  {
+    "objectID": "data-chapters/social-atlas.html",
+    "href": "data-chapters/social-atlas.html",
+    "title": "Social Capital Atlas",
+    "section": "",
+    "text": "Brief Description\nThis information is based on social media data and presence.\nThis is a sample of friendship ties for users aged 25-44 in the United States to construct measures for how communities are connected.\nDifferent measures for social capital in this dataset:",
+    "crumbs": [
+      "Measurements",
+      "Social Capital Atlas"
+    ]
+  },
+  {
+    "objectID": "data-chapters/social-atlas.html#brief-description",
+    "href": "data-chapters/social-atlas.html#brief-description",
+    "title": "Social Capital Atlas",
+    "section": "",
+    "text": "Connectedness: How people with different characteristics and backgrounds are friends with each other, this is a clear example of bridging social capital.\nCohesiveness: The degree to which friendship networks are clustered into cliques and whether friendships tend to be supported by mutual friends. This includes our clustering and support ratio measures.\nCivic Engagement: Indices of trust or participation in civic organizations. This includes our volunteering rate measure.",
+    "crumbs": [
+      "Measurements",
+      "Social Capital Atlas"
+    ]
+  },
+  {
+    "objectID": "data-chapters/social-atlas.html#source",
+    "href": "data-chapters/social-atlas.html#source",
+    "title": "Social Capital Atlas",
+    "section": "Source",
+    "text": "Source\nSocial Capital Atlas",
+    "crumbs": [
+      "Measurements",
+      "Social Capital Atlas"
+    ]
+  },
+  {
+    "objectID": "data-chapters/social-atlas.html#measures",
+    "href": "data-chapters/social-atlas.html#measures",
+    "title": "Social Capital Atlas",
+    "section": "Measures",
+    "text": "Measures\n\nEconomic Connectedness (Social)\nThis indicator measures the social ties between individuals of high and low socioeconomic status (SES). This measure is a form of bridging social capital, linking individuals from different social and economic backgrounds. Economic connectedness is a key factor in upward income mobility, as research shows that children from low-SES families in areas with greater economic connectedness have higher income potential. Social connections with well-resourced individuals provide opportunities and pathways to better economic outcomes. The level of economic connectedness is influenced by regional factors, such as the proximity and frequency of interactions between different SES groups (Chetty et al., 2022).\n\n\nChild Economic Connectedness (Social)\nThe level of economic connectedness for children within a county or zip code, indicating economic integration among the younger population.\n\n\nSupport Ratio (Cohesiveness) (Social)\nThis indicator measures the proportion of friendships within a community that share a third mutual friend, serving as an indicator of bonding social capital. This form of social capital reflects the strength and cohesiveness of close-knit relationships within a group. Research shows that strong social ties at both the individual and community levels can promote cooperation and resilience. High levels of social capital can help foster trust and support, which in turn leads to more cooperative actions and a better-functioning community (Poortinga, 2012).\n\n\nVolunteering rate (Social)\nThis indicator reflects the percentage of the population engaged in volunteer activities. Volunteering is a key aspect of civic participation, which has been linked to improved general health and well-being. Volunteering offers benefits not only to organizations and recipients but also to the volunteers themselves. Research shows that volunteering increases self-esteem, self-efficacy, and a sense of community, while also reducing loneliness and improving mental health (Nichol et al., 2023). These social and psychological benefits contribute to lower mortality rates and overall better health outcomes.\n\n\nNumber of Civic Organizations (Social)\nThis indicator reflects the number of civic organizations within a county or city, serving as a measure of community engagement and social infrastructure. Research suggests that greater civic participation and group involvement are linked to improved general and self-reported health, often through increased social cohesion (Almanza et al., 2012). Civic organizations can foster both bonding within groups and bridging across diverse communities, expanding social networks and strengthening community ties.\n\n\nExposure Group Membership (Social)\nThe extent to which individuals in a county or zip code are exposed to group memberships, reflecting social integration and network density.\n\n\nClustering - Percent of friends that are also friends with each other (Social)\nThe average of an individual’s friend pairs who are also friends with one another.",
+    "crumbs": [
+      "Measurements",
+      "Social Capital Atlas"
+    ]
+  },
+  {
+    "objectID": "data-chapters/us-census.html",
+    "href": "data-chapters/us-census.html",
+    "title": "US Census Bureau",
+    "section": "",
+    "text": "Brief Description\nThe 2020 Decennial Census Respondent Rates dataset provides detailed information on the participation rates of households in the 2020 Census, reflecting the level of engagement and response across different regions. This data is crucial for understanding demographic representation and ensuring accurate population counts.",
+    "crumbs": [
+      "Measurements",
+      "US Census Bureau"
+    ]
+  },
+  {
+    "objectID": "data-chapters/us-census.html#source",
+    "href": "data-chapters/us-census.html#source",
+    "title": "US Census Bureau",
+    "section": "Source",
+    "text": "Source\n2020 Census Response Rates",
+    "crumbs": [
+      "Measurements",
+      "US Census Bureau"
+    ]
+  },
+  {
+    "objectID": "data-chapters/us-census.html#measures",
+    "href": "data-chapters/us-census.html#measures",
+    "title": "US Census Bureau",
+    "section": "Measures",
+    "text": "Measures\n\nCensus Response Rate (Social)\n\nMeasure Description\nThis indicator reflects the rate at which residents respond to the U.S. Census, serving as a proxy for civic participation. Higher response rates can indicate stronger social engagement and institutional trust. Civic participation is a key component of social capital—alongside trust and reciprocity—and is linked to improved general and mental health, lower mortality, and reduced crime (Almanza et al., 2012). Increased participation in civic activities, as reflected in high Census response rates, contributes to building social capital within communities.\n\n\nCalculation\n\nCRRINT: Census Response Rate, Internet\n\nThe percentage of households that self-responded via the internet\n\nCRRAL: Census Response Rate, All Households, All Methods\n\nThe percentage of all households that self-responded\n\nRESP_DATE: Response Date\n\nThe date that the response was received\n\nDRRINT: Decennial Response Rate, Internet\n\nThe percentage of households that self-responded via the internet\n\n\nThe Census Response Rate was taken from the variable CRRALL\nCumulative Self-Response Rate - Overall\nThis dataset was extracted using the US Census API call, specifically for Iowa using the state code 19. No modifications or additions were made to the data.\ncensus_response_rate was directly extracted from the 2020 Census Response Rates.\nAccess Decennial Self-Response Rates",
+    "crumbs": [
+      "Measurements",
+      "US Census Bureau"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-gov.html",
+    "href": "data-chapters/iowa-gov.html",
+    "title": "Iowa Government Portal (iowa.gov)",
+    "section": "",
+    "text": "Brief Description\nThe dataset is a 2022 general election turnout report that we got from iowa.gov. The dastset is split up by counties and gives us statistics on the different type of voters in each county.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Government Portal (iowa.gov)"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-gov.html#source",
+    "href": "data-chapters/iowa-gov.html#source",
+    "title": "Iowa Government Portal (iowa.gov)",
+    "section": "Source",
+    "text": "Source\nIowa Secretary of State\nCounty data from ACS 5-year report, 2022",
+    "crumbs": [
+      "Measurements",
+      "Iowa Government Portal (iowa.gov)"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-gov.html#measures",
+    "href": "data-chapters/iowa-gov.html#measures",
+    "title": "Iowa Government Portal (iowa.gov)",
+    "section": "Measures",
+    "text": "Measures\n\n% Total Absentee Voters (Social)\n\nMeasure Description & Calculation\nAbsentee voters are people that cast their vote remotely instead of at their polling place on election day. We calculated the percentage of absentee voters by taking the total absentee voters divided by the total amount of voters in a county.\n\\[\n\\text{\\%\\_Total\\_Absentee\\_Voters =} \\frac{\\text{Absentee Voters}}{\\text{Total Voters}}\n\\]\n\n\n\nTotal Voters per 10k (Social)\n\nMeasure Description & Calculation\nThe total voters number is calculated from election day voters + absentee voters. The Total Voter per 10,000 people is calculated by taking the proportion of total voters of a county divided by the population of the county times 10,000.\n\\[\n\\text{Total Voters per 10k} = \\frac{\\text{Total Voters}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nTotal Voters (18+ Citizen) per 10k (Social)\n\nMeasure Description & Calculation\nTotal voters is calculated from election day and absentee voters. The population of citizens 18+ is from the acs variable B29001_001. The Total Voters (18+ Citizen) per 10,000 people is the proportion of total voters in a county per 10,000 people that are 18+ citizens times 10,000.\n\\[\n\\text{Total Voters 18+ per 10k} = \\frac{\\text{Total Voters}}{\\text{Population of citizens 18+}}\\times 10000\n\\]\n\n\n\nActive Voters per 10k (Social)\n\nMeasure Description & Calculation\nActive Voter per 10,000 people is the proportion of active voters as of 11/8/2022 in a county divided by the county population times 10,000.\n\\[\n\\text{Active Voters per 10,000 people} = \\frac{\\text{Active Voters as of 11/8/2022}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nElection Day Voters per 10k (Social)\n\nMeasure Description & Calculation\nElection Day Voters per 10,000 people is the proportion of election day voters in a county divided by the county population times 10,000.\n\\[\n\\text{Election Day Voters per 10,000 people} = \\frac{\\text{Election Day Voters}}{\\text{Population}}\\times 10000\n\\]\n\n\n\nAbsentee Voters per 10k (Social)\n\nMeasure Description & Calculation\nAbsentee Voters per 10,000 people is the proportion of absentee voters in a county divided by county population time 10,000.\n\\[\n\\text{Absentee Voters per 10,000 people} = \\frac{\\text{Absentee Voters}}{\\text{Population}}\\times 10000\n\\]\n\n\n\n% Total Voter Turnout (Social)\n\nMeasure Description and Calculation\n% Total Voter Turnout is the proportion of total voters in a county divided by the registered voter population (active and inactive voters).\n\\[\n\\text{\\%\\_Total\\_Voter\\_Turnout} = \\frac{\\text{Total Voter}}{\\text{Active Voters + Inactive Voters}}\n\\]",
+    "crumbs": [
+      "Measurements",
+      "Iowa Government Portal (iowa.gov)"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iecdb.html",
+    "href": "data-chapters/iecdb.html",
+    "title": "Iowa Ethics and Campaign Disclosure Board",
+    "section": "",
+    "text": "Source\nIowa Ethics and Campaign Disclosure Board",
+    "crumbs": [
+      "Measurements",
+      "Iowa Ethics and Campaign Disclosure Board"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iecdb.html#brief-description",
+    "href": "data-chapters/iecdb.html#brief-description",
+    "title": "Iowa Ethics and Campaign Disclosure Board",
+    "section": "Brief Description",
+    "text": "Brief Description\nPolitical candidates for state offices submit campaign contribution data to the Iowa Ethics and Campaign Disclosure Board, which makes the data publicly available for download. For this project, individual contribution data for the years XXXX to XXXX was downloaded, aggregated by city, and cleaned by city names to match with other city datasets.",
+    "crumbs": [
+      "Measurements",
+      "Iowa Ethics and Campaign Disclosure Board"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iecdb.html#measures",
+    "href": "data-chapters/iecdb.html#measures",
+    "title": "Iowa Ethics and Campaign Disclosure Board",
+    "section": "Measures",
+    "text": "Measures\n\nIowa political contributions per adult (Political)\nThis measure is the total federal political contributions in a community divided by the total number of adults in a community.\n\nMeasure Description & Calculation\n\\[{\\text{pct\\_small\\_businesses =}}\\frac{\\text{small\\_business\\_count}}{\\text{total\\_business\\_count}}\\]",
+    "crumbs": [
+      "Measurements",
+      "Iowa Ethics and Campaign Disclosure Board"
+    ]
+  },
+  {
+    "objectID": "data-chapters/iowa-culture.html#cultural-locations-per-10000-people-cultural",
+    "href": "data-chapters/iowa-culture.html#cultural-locations-per-10000-people-cultural",
+    "title": "Iowa Culture App",
+    "section": "Cultural Locations per 10,000 People (Cultural)",
+    "text": "Cultural Locations per 10,000 People (Cultural)\n\nMeasure Description\nThis indicator measures the number of cultural sites—such as museums, monuments, historic landmarks, and public art—per 10,000 residents in a given city or county. It helps assess the density and accessibility of cultural resources across communities. Cultural participation has been linked to better self-reported health, partly due to its social and emotional benefits (Wilkinson et al., 2007). Attending cultural activities often involves social interaction, which can foster support networks that positively influence health and well-being.\n\nCalculation\nFor our analysis, we focused on the total count of historic sites, museums, public art, monuments, and similar locations, collectively referred to as cultural locations. To assess the distribution of these cultural sites within each city or county, we computed the number of cultural locations per 10,000 people. This measure allows us to compare the availability and density of cultural resources across different areas.\nAfter extracting the relevant data from the website, we tallied the total number of cultural locations for each city or county. To calculate our measure of interest (Cultural_Locations_per_10k), we used the following steps:\n\nExtracted city/county population data from the American Community Survey (ACS).\nDivided the total number of cultural locations in each city/county by the population of the corresponding city/county.\nMultiplied the results by 10,000 to express the number of cultural locations per 10,000 people.\n\nThus, the final measure Cultural_Locations_per_10k was obtained using this formula:\n\\[\n\\text{Cultural\\_Locations\\_per\\_10k} = \\frac{\\text{Total Number of Cultural Locations}}{\\text{Population}} \\times 10,000\n\\]",
+    "crumbs": [
+      "Measurements",
+      "Iowa Culture App"
+    ]
+  }
+]

@@ -154,6 +154,12 @@ window.Quarto = {
  <span class="menu-text">Table of Contents</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../table-of-contents_bh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">table-of-contents</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -322,7 +328,7 @@ window.Quarto = {
   <li><a href="#brief-description" id="toc-brief-description" class="nav-link active" data-scroll-target="#brief-description">Brief Description</a></li>
   <li><a href="#measures" id="toc-measures" class="nav-link" data-scroll-target="#measures">Measures</a>
   <ul class="collapse">
-  <li><a href="#proportion-of-crop-lands-natural" id="toc-proportion-of-crop-lands-natural" class="nav-link" data-scroll-target="#proportion-of-crop-lands-natural">Proportion of Crop lands (Natural)</a></li>
+  <li><a href="#percentage-of-cropland-natural" id="toc-percentage-of-cropland-natural" class="nav-link" data-scroll-target="#percentage-of-cropland-natural">Percentage of Cropland (Natural)</a></li>
   <li><a href="#value-per-acre-natural" id="toc-value-per-acre-natural" class="nav-link" data-scroll-target="#value-per-acre-natural">Value Per Acre (Natural)</a></li>
   </ul></li>
   </ul>
@@ -351,7 +357,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">January 6, 2025</p>
+      <p class="date-modified">May 6, 2025</p>
     </div>
   </div>
     
@@ -368,18 +374,21 @@ window.Quarto = {
 </section>
 <section id="measures" class="level2">
 <h2 class="anchored" data-anchor-id="measures">Measures</h2>
-<section id="proportion-of-crop-lands-natural" class="level3">
-<h3 class="anchored" data-anchor-id="proportion-of-crop-lands-natural">Proportion of Crop lands (Natural)</h3>
-<section id="measure-description-calculation" class="level4">
-<h4 class="anchored" data-anchor-id="measure-description-calculation">Measure Description &amp; Calculation</h4>
-<p>Percentage of crop lands in county</p>
+<section id="percentage-of-cropland-natural" class="level3">
+<h3 class="anchored" data-anchor-id="percentage-of-cropland-natural">Percentage of Cropland (Natural)</h3>
+<section id="measure-description" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description">Measure Description</h4>
+<p>This indicator measures the proportion of land in a county used for growing crops. It is derived from annual crop acreage reports submitted to the USDA, which detail land use, crop types, and locations. Counties with high cropland percentages may rely heavily on natural resources for economic stability. However, research suggests that natural resource dependence—particularly in rural areas—can be linked to lower long-term economic prosperity and underinvestment in human capital. Monitoring cropland levels is critical not only for resource management and conservation (natural capital), but also for understanding economic risk and financial resilience in agricultural communities (financial capital) (Mueller, 2020).</p>
+</section>
+<section id="calculation" class="level4">
+<h4 class="anchored" data-anchor-id="calculation">Calculation</h4>
 <p>crop_area: areas of land used for agriculture - crop land, taken from USDA data county_area: areas of the whole counties across the state of Iowa, calculated by using sf package and passing the geometry <span class="math display">\[{\text{prop\_crop =}}\frac{\text{crop area}}{\text{county area}}\]</span></p>
 </section>
 </section>
 <section id="value-per-acre-natural" class="level3">
 <h3 class="anchored" data-anchor-id="value-per-acre-natural">Value Per Acre (Natural)</h3>
-<section id="measure-description-calculation-1" class="level4">
-<h4 class="anchored" data-anchor-id="measure-description-calculation-1">Measure Description &amp; Calculation</h4>
+<section id="measure-description-calculation" class="level4">
+<h4 class="anchored" data-anchor-id="measure-description-calculation">Measure Description &amp; Calculation</h4>
 <p>Value of every acre of agricultural land - crop land, taken from USDA data</p>
 <p>Directly extract the value per acre from USDA data (value_per_acre).</p>
 
