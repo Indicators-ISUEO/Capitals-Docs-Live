@@ -1,0 +1,56 @@
+---
+date: "July 11, 2024"
+date-modified: last-modified
+---
+
+# Bureau of Economic Analysis {.unnumbered}
+
+## Brief Description
+
+Bureau of Economic Analysis provides data about GDP of different industries.
+
+## Source
+
+[GDP of Industries in Iowa](https://apps.bea.gov/itable/?ReqID=70&step=1&_gl=1*5gdtr7*_ga*NDAwNDc3NzI0LjE3MjcyODk1NzU.*_ga_J4698JNNFT*MTcyNzQ1MjIyOS4zLjEuMTcyNzQ1NDY2OS42MC4wLjA.#eyJhcHBpZCI6NzAsInN0ZXBzIjpbMSwyOSwyNSwzMSwyNiwyNywzMCwzMF0sImRhdGEiOltbIlRhYmxlSWQiLCI1MDEiXSxbIk1ham9yX0FyZWEiLCI0Il0sWyJTdGF0ZSIsWyIxOTAwMCJdXSxbIkFyZWEiLFsiWFgiXV0sWyJTdGF0aXN0aWMiLCItMSJdLFsiVW5pdF9vZl9tZWFzdXJlIiwiTGV2ZWxzIl0sWyJZZWFyIixbIjIwMjIiXV0sWyJZZWFyQmVnaW4iLCItMSJdLFsiWWVhcl9FbmQiLCItMSJdXX0=)
+
+## Measures
+
+### GDP of Agriculture, forestry, fishing and hunting (2022) (Natural)
+
+#### Measure Description & Calculation
+
+Gross domestic product of agriculture, forestry, fishing and hunting sector that measures the value of the goods and services produced by establishments in this sector, minus the value of the goods and services used to produce them. Agriculture, forestry, fishing and hunting NAICS sector include establishments primarily engages in growing in crops, raising animals, harvesting timber, harvesting fish and other animals from a farm, ranch or their natural habitats. These establishments are often described as farms, ranches, diaries, greenhouses, nurseries, orchards or hatcheries.
+
+$$\text{pct\_gdp\_ag\_for\_fish\_hunt = }\frac{\text{GDP of Agriculture, forestry, fishing and hunting}}{\text{Total GDP of County}}$$
+
+### GDP of Mining, quarrying, and oil and gas extraction (2022) (Natural)
+
+#### Measure Description & Calculation
+
+The gross domestic product from mining, quarrying, and oil and gas extraction measures the economic output. Mining, quarrying, and oil and gas extraction is a sector under NAICS. It comprises establishments that extract naturally assuring mineral solid, liquid minerals, and gases. The term mining in this case includes quarrying, well operations, beneficiating, and other preparation customarily performed at the mine site or mining activity.
+
+$$\text{pct\_gdp\_mine = }\frac{\text{GDP of Mining, quarrying, and oil and gas extraction}}{\text{Total GDP of County}}$$
+
+### GDP of Finance (2022) (Financial)
+
+#### Measure Description & Calculation
+
+Includes finance, insurance, real estate, rental, and leasing. Finance and insurance sector is comprises of primarily financial transactions (creation, liquidation, or change in ownership of financial assets) and/or facilitating financial transactions. Three principle types of activities are identified. Pooling of risk by underwriting insurance and annuities, providing specialized services facilitating or supporting financial intermediation, insurance, and employee benefit programs. monetary authorities charged with monetary control.
+
+$$\text{pct\_gdp\_finance\_insure = }\frac{\text{GDP of Finance}}{\text{Total GDP of County}}$$
+
+### GDP of Manufacturing (2022) (Financial)
+
+#### Measure Description & Calculation
+
+The Manufacturing NAICS sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.
+
+$$\text{pct\_gdp\_manufacturing = }\frac{\text{GDP of Manufacturing}}{\text{Total GDP of County}}$$
+
+### GDP per Capita (2022) (Financial)
+
+#### Measure Description & Calculation
+
+This measure includes GDP in all NAICS categories, divided by the total population in a county. It serves as a measure of economic productivity adjusted by population. The final measure has a unit of thousands of dollars per person.
+
+$$\text{gdp\_per\_capita = }\frac{\text{Total GDP of County}}{\text{Total Population of County}}$$

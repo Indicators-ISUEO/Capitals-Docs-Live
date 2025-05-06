@@ -1,0 +1,41 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Iowa Department of Transportation Bridges {.unnumbered}
+
+## Brief Description
+
+The Iowa DOT Bridges dataset includes information on total bridges,
+obsolete bridges, and deficient bridges. It also contains derived
+measures such as the proportion of obsolete and deficient bridges and
+the number of bridges per acre per county.
+
+## Sources
+
+-   [Iowa Department of
+    Transportation](https://data.iowadot.gov/maps/c984dfeb9a6f455791f9a8fc021f7ee2/about)
+-   Acres of each county based on the ALAND + AWATER attributes of
+    Census data.
+
+## Measures
+
+Initially, there were three separate datasets: total bridges, obsolete
+bridges, and deficient bridges, each including the respective counts.
+After merging all these datasets, the new measures were:
+
+### Proportion_Obsolete_Deficient (Built)
+Calculated by adding total sum of obsolete and deficient bridges divided by total bridges.
+
+### Bridges_Per_Acre (Built)
+Calculated by total bridge count divided by county's total acre per county.
+
+## Measure Calculation
+
+$${\text{Proportion\_Obsolete\_Deficient = }}\frac{\text{Obsolete Count + Deficient Count}}{\text{Bridge Count}}$$
+
+$${\text{Bridges\_Per\_Acre = }}\frac{\text{Bridges Count}}{\text{County area}}$$

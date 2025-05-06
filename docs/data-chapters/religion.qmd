@@ -1,0 +1,38 @@
+---
+date: "July 11, 2024"
+date-modified: last-modified
+---
+
+# US Religion Census {.unnumbered}
+
+## Brief Description
+
+The US Religion Census provides data about the distribution of different religious traditions.
+
+## Source
+
+[The Association of Religion Data Archives](https://www.thearda.com/us-religion/group-profiles/groups)
+
+## Measures
+
+### Religious Diversity (Cultural)
+
+#### Measure Description & Calculation
+
+Religious Tradition Diversity (consider non-religious people as a tradition)
+
+#### Simpson Index
+
+$$D = 1 - \left( \frac{\sum n(n-1)}{N(N-1)} \right)$$
+
+Where:
+
+• n = the total number of organisms of a particular species
+
+• N = the total number of organisms of all species
+
+Interpretation: Simpson's Diversity Index is a measure of diversity which takes into account the number of species present, as well as the relative abundance of each species. As species richness and evenness increase, so diversity increases. It is also the probability of picking two random individuals which are not of the same group.
+
+#### Religious Diversity (Cultural)
+
+From the dataset, we summarize the dataset by the number of adherents across different religious traditions. Calculate the Simpson Index for different traditions (species) using the formula above.

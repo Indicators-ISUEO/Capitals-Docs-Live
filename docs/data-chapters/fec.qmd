@@ -1,0 +1,19 @@
+---
+data: "2025-01-02"
+date-modified: last-modified
+---
+
+# Federal Election Commission {.unnumbered}
+
+## Source
+[Federal Election Commission](https://www.fec.gov/data/browse-data/?tab=bulk-data)
+
+## Brief Description
+
+Political candidates for federal offices submit campaign contribution data to the Federal Election Commission, which makes the data publicly available for download. For this project, individual contribution data for the 2023-2024 campaign period was downloaded, aggregated by city, and cleaned by city names to match with other city datasets.
+
+## Measures
+
+### Federal political contributions per adult (Political)
+This measure is the total federal political contributions in a community divided by the total number of adults in a community.
+

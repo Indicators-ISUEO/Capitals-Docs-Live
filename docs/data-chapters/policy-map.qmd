@@ -1,0 +1,30 @@
+---
+date: "2025-01-02"
+date-modified: last-modified
+---
+
+# Policy Map {.unnumbered}
+
+## Source
+[Policy Map](https://www.policymap.com/)
+
+## Brief Description
+
+Policy Map has a large variety of datasets available. For this project, we utilized two datasets.
+
+
+## Measures
+
+### Total Power Generation (Built)
+The data for this measure is provided by the US Department of Energy Energy Information Administration. The data consists of a list of power plant locations across the country, including their energy capacity. Total Power Generation is measured by total MW for power plants in a given county or city.
+
+#### Measure Description & Calculation
+
+This measure is a sum of the energy capacity in MW of all of the power plants in a county or city.
+
+
+### School Violence per 1,000 Students (Social)
+The data for this measure is from the US Department of Education Office of Civil Rights. The data has a large number of variables. Included in the data are measures of rates of violent incidents per 1,000 students in each public school. These violent incidents include rapes, sexual assaults, robberies, physical attacks or fights, threats of physical attack, and possession of firearms or explosive devices.
+
+#### Measure Description & Calculation
+This measure is a sum of the rates per 1,000 students for each of the violent incidents listed above.

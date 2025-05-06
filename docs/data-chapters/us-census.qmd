@@ -1,0 +1,42 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+---
+
+# US Census Bureau {.unnumbered}
+
+## Brief Description
+
+The 2020 Decennial Census Respondent Rates dataset provides detailed information on the participation rates of households in the 2020 Census, reflecting the level of engagement and response across different regions. This data is crucial for understanding demographic representation and ensuring accurate population counts.
+
+## Source
+
+[2020 Census Response Rates](https://www.census.gov/library/visualizations/interactive/2020-census-self-response-rates-map.html)
+
+## Measures
+
+### Census Response Rate (Social)
+
+#### Measure Description
+This indicator reflects the rate at which residents respond to the U.S. Census, serving as a proxy for civic participation. Higher response rates can indicate stronger social engagement and institutional trust. Civic participation is a key component of social capital—alongside trust and reciprocity—and is linked to improved general and mental health, lower mortality, and reduced crime (Almanza et al., 2012). Increased participation in civic activities, as reflected in high Census response rates, contributes to building social capital within communities.
+
+#### Calculation
+
+-   CRRINT: Census Response Rate, Internet
+    -   The percentage of households that self-responded via the internet
+-   CRRAL: Census Response Rate, All Households, All Methods
+    -   The percentage of all households that self-responded
+-   RESP_DATE: Response Date
+    -   The date that the response was received
+-   DRRINT: Decennial Response Rate, Internet
+    -   The percentage of households that self-responded via the internet
+
+The Census Response Rate was taken from the variable CRRALL
+
+Cumulative Self-Response Rate - Overall
+
+This dataset was extracted using the US Census API call, specifically for Iowa using the state code 19. No modifications or additions were made to the data.
+
+census_response_rate was directly extracted from the 2020 Census Response Rates.
+
+[Access Decennial Self-Response Rates](https://www2.census.gov/data/api-documentation/how-to-access-2020-decennial-response-rates-for-all-counties-in-a-state-from-the-census-api.pdf)

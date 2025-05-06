@@ -1,0 +1,68 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# County Health Rankings {.unnumbered}
+
+## Brief Description
+
+County Health Rankings data provides insights into the health outcomes
+and factors influencing health within counties across the United States.
+It includes measures related to natural and built environments, such as
+air and water quality, child care, and access to healthy foods.
+
+### Source
+
+[2024 County Health
+Rankings](https://www.countyhealthrankings.org/health-data/methodology-and-sources/data-documentation)
+
+## Measures
+
+Initially, each measure in the dataset included its raw value along with
+the high and low values of its confidence interval. However, we chose to
+use only the raw values for our final dataset. Additionally, while the
+child care and food environment index measures were not used in our
+county health rankings natural dataset, they were incorporated into our
+built capital analysis.
+
+1.  Fair_Health_rawvalue
+2.  Particulate_Matter_rawvalue
+3.  Drinking_Water_Violations_rawvalue
+4.  Child_Care_Centers_rawvalue
+5.  Food_Environment_Index_rawvalue
+6.  Physical Health
+7.  Mental Health
+
+### Particulate_Matter (Natural)
+
+-   Particulate matter (PM) encompasses microscopic particles suspended
+    in the air, such as dust, dirt, soot, smoke, and liquid droplets.
+
+### Drinking_Water_Violations (Natural)
+
+-   Water Pollution
+
+### Food Environment Index (Built)
+
+-   Limited Access to Healthy Foods estimates the percentage of the
+    population that is low income and does not live close to a grocery
+    store. (according to, County Health Rankings)
+
+### Child Care Centers (Built)
+
+-   The number of child care centers per 1,000 population under 5 years
+    old.
+
+### Fair and Poor Health (Human)
+- This indicator reflects the percentage of adults who report being in fair or poor health. Self-reported health status is a strong predictor of overall well-being and life satisfaction. Poverty contributes to poor health through inadequate living conditions, limited access to medical care, and barriers to treatment (Thorisdottir et al., 2017). In contrast, areas with more developed infrastructure and healthcare access tend to support better health outcomes and improved subjective well-being.
+
+
+### Poor Physical Health Days (Human)
+- The average number of reported physically unhealthy days per month
+
+### Poor Mental Health Days (Human)
+- The average number of reported mentally unhealthy days per month

@@ -1,0 +1,40 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+---
+
+# Environmental Justice Screening Tool {.unnumbered}
+
+## Brief Description
+
+The Environmental Justice Screening Tool Dataset provides information on various environmental and health hazards that can affect communities, helping to identify areas with higher risks and vulnerabilities. It includes pre-calculated measures such as air toxics cancer risk, respiratory hazard index, and proximity to hazardous waste.
+
+## Source
+
+[EPA - EJScreen](https://www.epa.gov/ejscreen/download-ejscreen-data)
+
+## Measures
+
+### Cancer_Risk (CANCER) (Natural)
+
+-   Evaluates the risk of cancer associated with exposure to air toxics.
+
+### Resp_Hazard_Index (RESP) (Natural)
+
+-   Assesses the risk to respiratory health from exposure to air toxics.
+
+### Toxic_Release_Air (RESP_AIR) (Natural)
+
+-   Measures the amount of toxic substances released into the air.
+
+### Hazard_Waste_Prox (PTSDF) (Natural)
+
+-   Indicates the proximity to hazardous waste sites.
+
+### Wastewater_Discharge (PWDIS) (Natural)
+
+-   Represents the quantity of wastewater discharged into the environment.
+
+All of these measures were pre-calculated, with detailed information on their exact calculation available in the data source PDF. While the dataset includes numerous potential measures, we focused on using the most general ones.
+
+[EJScreen Technical Documentation](https://www.epa.gov/system/files/documents/2024-07/ejscreen-tech-doc-version-2-3.pdf)

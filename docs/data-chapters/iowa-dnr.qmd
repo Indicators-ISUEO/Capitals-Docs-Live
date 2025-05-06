@@ -1,0 +1,69 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+---
+
+# Iowa Department of Natural Resources {.unnumbered}
+
+## Brief Description
+
+The Iowa Department of Natural Resources provides data regarding natural aspects such as streams, forest reserve programs, public areas, lakes and wetlands.
+
+## Source
+
+[Wetlands in Iowa](https://data.iowa.gov/Conservation-Restoration/Designated-Wetlands-in-Iowa/4vww-mzie/about_data)
+
+[Forestry in Iowa](https://data.iowa.gov/Conservation-Restoration/Designated-Wetlands-in-Iowa/4vww-mzie/about_data)
+
+[Streams in Iowa](https://data.iowa.gov/Physical-Geography/Major-Water-Sources-in-Iowa-Streams/h5aj-r72t/about_data)
+
+[Lakes in Iowa](https://data.iowa.gov/Physical-Geography/Major-Water-Sources-in-Iowa-Lakes/2mmi-txzx/about_data)
+
+[Public Areas in Iowa](https://data.iowa.gov/Outdoor-Recreation/Public-Areas/ng5j-kimu/about_data)
+
+## Measures
+
+### Wetlands (Natural)
+
+A wetland is an area of land that is continuously or periodically wet throughout the year. In Iowa.gov it states that a "Designated wetland" means land designated as a protected wetland by the United States Department of the Interior or the Department of Natural Resources. It does not include land where an agricultural drainage well has been plugged causing a temporary wetland or land within a drainage district or levee district.
+
+#### Measure Description & Calculation
+
+**Wetland_Acres_Prop**: Calculated the proportion of wetlands acres per county to the total acres per county.
+
+$$\text{Wetland\_Acres\_Prop =} \frac{\text{Wetland Acres}} {\text{county area}}$$
+
+### Forestry (Natural)
+
+The Iowa Legislature passed a landowner property tax incentive known as the Forest and Fruit Tree Reservation Act (Forest Reserve) in 1906. The act is to reduce or eliminate property taxes to incentive landowners to grow tress on their less fertile or productive land. It is a source of farm income, erosion control, watershed protection and game cover.
+
+#### Measure Description & Calculation
+
+**forest_acres_prop_county**: Calculated the proportion of forest acres per county to the total acres per county. The most updated year for forest acres we have is 2020.
+
+$$\text{2020 Forest Acres Prop =} \frac{\text{2020 Forest Acres}} {\text{county area
+}}$$
+
+### Total Stream Length (Natural)
+
+The stream length is the total distance of a stream channel within Iowa. Helps the understanding of water flow patterns, potential flood risks, aquatic habitat availability.
+
+#### Measure Description & Calculation
+
+**Stream Length in Miles**: Using R, find the geometry of counties (using counties() of tigris) and use st_intersection() to take the geometry intersection of the streams and counties. Apply st_length() to calculate the length of streams and group by county.
+
+### Proportion of Lakes in Iowa (Natural)
+
+The proportion of lakes in Iowa is the percentage of land area that lakes cover. This information tells you how much lakes make up the state of Iowa.
+
+#### Measure Description & Calculation
+
+**Proportion of Lakes**: Using R, find the lake_area of each lake using st_area of the geometry column. Group by county and sum up all the lake areas. Calculate the proportion of lake by dividing the lake_area by the county area (taken from counties() function in tigris package)
+
+### Proportion of Public Areas in Iowa (Natural)
+
+The public area represents conservation and recreation lands in the state of Iowa. The sources are mainly from agency responsible for the area.
+
+#### Measure Description & Calculation
+
+**Proportion of Public Areas**: Using R, find the public_area of each lake using st_area of the geometry column. Group by county and sum up all the public areas. Calculate the proportion of lake by dividing the public_area by the county area (taken from counties() function in tigris package)

@@ -1,0 +1,31 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+---
+
+# US Department of Agriculture Census {.unnumbered}
+
+## Brief Description
+
+The United States Department of Agriculture is the federal executive department responsible for developing and executing federal laws related to farming, forestry, rural economic development, and food.
+
+## Measures
+
+### Percentage of Cropland (Natural)
+
+#### Measure Description
+
+This indicator measures the proportion of land in a county used for growing crops. It is derived from annual crop acreage reports submitted to the USDA, which detail land use, crop types, and locations. Counties with high cropland percentages may rely heavily on natural resources for economic stability. However, research suggests that natural resource dependence—particularly in rural areas—can be linked to lower long-term economic prosperity and underinvestment in human capital. Monitoring cropland levels is critical not only for resource management and conservation (natural capital), but also for understanding economic risk and financial resilience in agricultural communities (financial capital) (Mueller, 2020).
+
+#### Calculation
+
+crop_area: areas of land used for agriculture - crop land, taken from USDA data county_area: areas of the whole counties across the state of Iowa, calculated by using sf package and passing the geometry 
+$${\text{prop\_crop =}}\frac{\text{crop area}}{\text{county area}}$$
+
+### Value Per Acre (Natural)
+
+#### Measure Description & Calculation
+
+Value of every acre of agricultural land - crop land, taken from USDA data
+
+Directly extract the value per acre from USDA data (value_per_acre).

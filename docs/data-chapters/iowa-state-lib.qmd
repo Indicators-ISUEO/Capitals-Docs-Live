@@ -1,0 +1,180 @@
+---
+date: "07/11/2024"
+date-modified: last-modified
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# State Library of Iowa {.unnumbered}
+
+## Brief Description
+
+State Library of Iowa provides statistics on income, expenditures, collections, circulation and other measures. It is split up by a cities size and name. We looked at the fiscal year 2023, which is July 1, 2022 - June 30, 2023.
+
+## Source
+
+[State Library of
+Iowa](https://www.statelibraryofiowa.gov/application/files/5217/1623/2157/IOWA_PUBLIC_LIBRARY_STATISTICS_big_book_fy23_final.pdf)
+
+City data from ACS 5-year report, 2022
+
+## Measures
+
+### Per Capita Expenditures (Financial)
+
+#### Measure Description & Calculation
+
+Per Capita Expenditures are the average amount of money a library spent per person in a city.
+
+$$
+\text{Per Capita Expenditures} = \frac{\text{Total Expenditures}}{\text{Population}}
+$$
+
+### Total Library Expenditures per 10,000 people (Financial)
+
+#### Measure Description & Calculation
+
+Per Capita Expenditures are the average amount of money a library spent per 10,000 people in a city.
+
+$$
+\text{Total Library Expenditures per 10k} = \frac{\text{Total Expenditures}}{\text{Population}}\times 10000
+$$
+
+### Staff Expenditures per 10,000 people (Financial)
+
+#### Measure Description & Calculation
+
+Staff expenditures is the amount of money spent on paying library staff.
+The city Library staff expenditures per 10,000 people in a city.
+
+$$
+\text{Staff Expenditures per 10k} = \frac{\text{Staff Expenditures}}{\text{Population}}\times 10000
+$$
+
+### Collection Expenditures per 10,000 people (Financial)
+
+#### Measure Description & Calculation
+
+Library collection expenditrues are the operating expenses that are used
+to buy materials in their collections. The Collection Expenditure Per
+10,000 People calculates the Library collection expenditures per 10,000
+people in a city.
+
+$$
+\text{Collection Expenditures per 10k} = \frac{\text{Collection Expenditures}}{\text{Population}}\times 10000
+$$
+
+### Book Circ per 10,000 people (Cultural)
+
+#### Measure Description & Calculation
+
+Book circulation accounts for the frequency that books are borrowed and returned to a library. Book Circ Per 10,000 People measures the circulation of books within a city per 10,000 people.
+
+$$
+\text{Book Circ per 10k} = \frac{\text{Book1}}{\text{Population}}\times 10000
+$$
+
+### Books by Physical Items (Built)
+
+#### Measure Description & Calculation
+
+The proportion of physical items that are books in a library.
+
+$$
+\text{Books by Physical Items} = \frac{\text{Book1}}{\text{Total Phys1}}
+$$
+
+### Book Percent (Built)
+
+#### Measure Description & Calculation
+
+Proportion of physical books out of all the items in a library.
+
+$$
+\text{Book Percent} = \frac{\text{Book1}}{\text{Total Use}}
+$$
+
+### Num Programs per 10,000 people (Social)
+
+#### Measure Description & Calculation
+
+The number of library programs across all ages per 10,000 people in a city.
+
+$$
+\text{Num Programs per 10k} = \frac{\text{Prog6}}{\text{Population}}\times 10000
+$$
+
+Prog6: Total number of programs in a city
+
+### Num of Attend per Pop (Social)
+
+#### Measure Description & Calculation
+
+The proportion of library program attendance in a city.
+
+$$
+\text{Num of Attend per Pop} = \frac{\text{Attend6}}{\text{Population}}
+$$
+
+Attend6: Total number of program attendance in a city
+
+### Total Kid Programs (Social)
+
+#### Measure Description & Calculation
+
+The total amount of kid programs that a library has in a city.
+
+$$
+\text{Total Kid Programs} = \text{Prog 1} + \text{Prog 2}
+$$
+
+### Num Kid Programs per 10,000 people (Social)
+
+#### Measure Description & Calculation
+
+The number of kid programs that a library has per 10,000 people in a city.
+
+$$
+\text{Num Kid Programs per 10k} = \frac{\text{Total Kid Programs}}{\text{Population}}\times 10000
+$$
+
+### Visits per Capita (Social)
+
+#### Measure Description & Calculation
+
+Per Capita library visits are the average amount of visits a library get in a city.
+
+$$
+\text{Visits per Capita} = \frac{\text{Visits}}{\text{Population}}
+$$
+
+### Visits per 10,000 people (Social)
+
+#### Measure Description & Calculation
+
+The number of library visits per 10,000 people in a city.
+
+$$
+\text{Visits per 10k} = \frac{\text{Visits}}{\text{Population}}\times 10000
+$$
+
+### Wireless Sessions per 10,000 people (Built)
+
+#### Measure Description & Calculation
+
+The number of wireless sessions at a library per 10,000 people in a city.
+
+$$
+\text{Wireless Sessions per 10k} = \frac{\text{Wireless Sessions}}{\text{Population}}\times 10000
+$$
+
+### Website visits per 10,000 People (Social)
+
+#### Measure Description & Calculation
+
+The number of library website visits per 10,000 in a city.
+
+$$
+\text{Website visits per 10k} = \frac{\text{Website Visits}}{\text{Population}}\times 10000
+$$
