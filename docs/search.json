@@ -34,7 +34,7 @@
     "href": "table-of-contents.html#built",
     "title": "Table of Contents",
     "section": "",
-    "text": "ACS 5-year\nHomeland infrastructure Foundation Data\nIowa department of Transportation\nPolicyMap\nRWJ County Health Rankings",
+    "text": "Median household property value\nMedian year of built structures\nPercentage of housing units built before 1960\nPercentage of occupied Housing Units\nPercentage of households with complete plumbing\nPercentage of households with a broadband subscription\nNumber of bridges per acre\nPercent of bridges that are obsolete or structurally deficient\nNumber of cell towers per 10,000 population\nNumber of public schools per 10,000 population\nNumber of private schools per 10,000 population\nNumber of colleges and universities per 10,000 population\nNumber of community colleges per 10,000 population\nNumber of fire stations per 10,000 population\nNumber of police stations per 10,000 population (Law Enforcement)\nNumber of hospitals per 10,000 population\nNumber of child care centers per 10,000 population\nNumber of convention centers per 10,000 population\nNumber of sports venues per 10,000 population\nFood Environment Index\nPower plant energy generation",
     "crumbs": [
       "Table of Contents"
     ]
@@ -44,7 +44,7 @@
     "href": "table-of-contents.html#cultural",
     "title": "Table of Contents",
     "section": "Cultural",
-    "text": "Cultural\n\nACS 5-year\nIowa Culture App\nState Library of Iowa\nTravel Iowa\nU.S. Religion Census",
+    "text": "Cultural\n\nCultural Locations per 10,000 People (Historic sites, public art, museums, monuments)\nRacial Diversity Simpson Index\nReligious Diversity Simpson Index\nLibrary Visits per 10,000 population\nLibrary Book Circulation per 10,000 population\nCommunity Events per 10,000 population",
     "crumbs": [
       "Table of Contents"
     ]
@@ -54,7 +54,7 @@
     "href": "table-of-contents.html#financial",
     "title": "Table of Contents",
     "section": "Financial",
-    "text": "Financial\n\nACS 5-year\nBureau of Economic Analysis\nCounty Business Patterns",
+    "text": "Financial\n\nCounty GDP per Capita (Thousands of $)\nPercent of County GDP in Manufacturing\nPercent of County GDP in Finance & Insurance\nUnemployment rate among 16+ population\nPercent of 16+ Population in Labor Force\nPercent of 20-64 Population in Labor Force\nMedian Household Income\nHouseholds Below Poverty Level\nGini Index of Income Diversity\nPercent of total businesses that are small (&lt;=4 employees)",
     "crumbs": [
       "Table of Contents"
     ]
@@ -64,7 +64,7 @@
     "href": "table-of-contents.html#human",
     "title": "Table of Contents",
     "section": "Human",
-    "text": "Human\n\nACS 5-year\nRWJ County Health Rankings",
+    "text": "Human\n\nPercent of adults with fair or poor health\nPoor physical health days (average number of physically unhealthy days in last 30)\nPoor mental health days (average number of mentally unhealthy days in last 30)\nHealth insurance rate (civilian noninstitutionalized population)\nPercent of 25+ Population with Bachelor’s Degree\nPercent of 25+ Population with HS Degree\nSenior dependency ratio (ratio of 65+ population to 18-64 population)\nChild dependency ratio (ratio of &lt;18 population to 18-64 population)\nDependency Ratio (ratio of children and seniors to 18-64 population)",
     "crumbs": [
       "Table of Contents"
     ]
@@ -74,7 +74,7 @@
     "href": "table-of-contents.html#natural",
     "title": "Table of Contents",
     "section": "Natural",
-    "text": "Natural\n\nACS 5-year\nBureau of Economic Analysis\nEnvironmental Justice Screening Tool\nFEMA National Risk Index\nIowa DNR\nOpenStreetMap\nRWJ County Health Rankings\nUSDA NASS Ag. Census",
+    "text": "Natural\n\nPercentage of Cropland\nCropland Value in Dollards per Acre\nPercent of County in Forest Reserve Program\nPercent of County in Public Areas\nCity Parks per 10,000 Population\nTotal Length of Streams in County\nPercent of County in Lakes\nPercent of County in Wetlands\nPresence of Drinking Water Violations\nParticulate Matter (PM2.5) Density\nAir toxics cancer risk\nRespiratory Hazard Index\nToxic releases to air\nWeighted proximity to hazardous waste\nWeighted proximity to wastewater discharge\nPercent of County GDP in Agriculture, Forestry, Fishing, and Hunting\nPercent of County GDP in Mining\nPercent of population employed in agriculture, forestry, fishing and hunting, and mining\nAnnualized frequency of floods\nAnnualized frequency of heat waves\nAnnualized frequency of hail\nAnnualized frequency of strong wind\nAnnualized frequency of tornadoes\nAnnualized frequency of winter weather\nAnnualized frequency of ice storms\nAnnualized frequency of droughts",
     "crumbs": [
       "Table of Contents"
     ]
@@ -84,7 +84,7 @@
     "href": "table-of-contents.html#political",
     "title": "Table of Contents",
     "section": "Political",
-    "text": "Political\n\nFederal Election Commission\nIowa Ethics and Campaign Disclosure Board",
+    "text": "Political\n\nFederal election contributions\nState election contributions",
     "crumbs": [
       "Table of Contents"
     ]
@@ -94,7 +94,7 @@
     "href": "table-of-contents.html#social",
     "title": "Table of Contents",
     "section": "Social",
-    "text": "Social\n\nACS 5-year\nFBI Crime Reports\nIowa.gov\nPolicyMap\nSocial Capital Atlas\nState Library of Iowa\nUS Census Bureau",
+    "text": "Social\n\nViolent Crime per 10,000 Population\nTotal crime per 10,000 Population\nEconomic Connectedness\nSupport Ratio (Cohesiveness)\nClustering - Percent of friends that are also friends with each other\nVolunteering Rate\nNumber of Civic Organizations\nPercent of single-parent households with children\nPercent of female-headed single-parent households with children\nPercent of male-headed single-parent households with children\nPercent of Workers with more than an hour commute\nPercent of Residents who are not proficient at English\n2020 Decennial Respondent Rates\nPercent Voter Turnout\nTotal Voters per 10,000 Population\nSchool Violence per 1,000 students",
     "crumbs": [
       "Table of Contents"
     ]
@@ -947,6 +947,16 @@
     "crumbs": [
       "Measurements",
       "Iowa Culture App"
+    ]
+  },
+  {
+    "objectID": "box-structure.html",
+    "href": "box-structure.html",
+    "title": "Structure of the Capitals Box Directory",
+    "section": "",
+    "text": "Capitals\n├── Data\n│   ├── Capitals Data\n│   |   ├── Source Data (Raw) #Raw data before any preprocessing.\n│   |   ├── Preprocessed Datasets #Datasets after initial preprocessing.\n│   |   ├── Final Datasets #Ready-to-use, cleaned datasets, with data sources.\n│   |   ├── Time Series Datasets #ACS datasets formatted for time series analysis.\n│   |   └── Capitals Data Sources.docx #Document listing data sources.\n|   |\n│   ├── Event Data\n│   │   ├── Raw Data #Unprocessed event data.\n│   │   ├── Preprocessed Data #Event data after initial processing.\n│   │   ├── Data_Sources.xlsx #Spreadsheet of event data sources.\n│   │   └── Event_Timeline_Sample Structure.xlsx #Sample structure for event timeline data.\n|   |\n│   └── Art_Culture_all_iowa_cities.xlsm #Excel file with art and culture data for Iowa cities.\n|\n├── Literature #Collection of documents and research literature\n│   ├── Previous Projects\n│   ├── Community Capitals\n│   ├── Student Reviews\n│   ├── Art + Culture\n│   └── Third Places\n|\n├── Scripts #Collection of scripts for data processing and analysis.\n│   ├── Social & Cultural\n│   ├── ACS_Time_Series\n│   ├── Natural & Built\n│   ├── Event Datasets\n│   ├── Documentation Code\n│   └── IowaCultureApp_Scraping.html\n|\n├── Administrative #Administrative documents and organizational files.\n│   ├── event timeline\n│   ├── capitals indicators\n│   ├── community groupings\n│   └── Capitals_Project_Description.docx\n|\n└── Tableau Dashboard\n    └── Community Capitals Dashboard.twbx #Tableau workbook for community capitals.",
+    "crumbs": [
+      "Structure of the Capitals Box Directory"
     ]
   }
 ]
