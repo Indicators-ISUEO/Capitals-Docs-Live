@@ -1,0 +1,46 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "Community Capitals Documentation"
+  date: "7/10/2024"
+  chapters:
+    - index.qmd
+    - table-of-contents.qmd
+    - part: "Measurements"
+      chapters: 
+        - data-chapters/acs.qmd
+        - data-chapters/bea.qmd
+        - data-chapters/cbp.qmd
+        - data-chapters/county-health-rate.qmd
+        - data-chapters/environ-justice.qmd
+        - data-chapters/fbi-crime.qmd
+        - data-chapters/fec.qmd
+        - data-chapters/fema.qmd
+        - data-chapters/homeland-inf.qmd
+        - data-chapters/iowa-culture.qmd
+        - data-chapters/dot.qmd
+        - data-chapters/iowa-dnr.qmd
+        - data-chapters/iecdb.qmd
+        - data-chapters/iowa-gov.qmd
+        - data-chapters/policy-map.qmd
+        - data-chapters/open-street.qmd
+        - data-chapters/iowa-state-lib.qmd
+        - data-chapters/social-atlas.qmd
+        - data-chapters/travel.qmd
+        - data-chapters/us-census.qmd
+        - data-chapters/religion.qmd
+        - data-chapters/usda-census.qmd
+        - measurement-changes.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
